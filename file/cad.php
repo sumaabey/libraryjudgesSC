@@ -86,19 +86,19 @@ In December 2021, it will be 75 years of the first meeting of the Constituent As
  <table id="example" class="display cell-border compact hover " style="width:100%">
         <thead>
             <tr>
-                <th STYLE="width: 57px;">Article in the <br> present Constitution</th>
-                <th>Corresponding Clause in the draft constitution</th>
+                <th STYLE="width: 57px;">Article in the <br> Constitution of India</th>
+                <th>Corresponding Clause in the Draft Constitution</th>
                 <th>Subject Heading</th>
-                <th>Debate Dates</th>
-                <th>Vol No</th>
+                <th>Dates</th>
+                <th>Volume No.</th>
                 <th>Page No.</th>
             </tr>
         </thead>
-        <tbody>
+         <tbody>
             <tr>
-                <td>Preamble</td>               
-                <td>Preamble</td>
-                <td>Preamble</td>
+                <td><b>Preamble</b></td>               
+                <td><b>Preamble</b></td>               
+                <td><b>Preamble</b></td>               
                 <td id='test'><a href='pdf/Complete Debates/comp_17-10-1949.pdf' target="_blank">17.10.1949</a></td>
                 <td>10</td>
                 <td id='test'><a href='pdf/17-10-1949 Page No 429-456.pdf' target="_blank">429-456</a></td>
@@ -106,7 +106,7 @@ In December 2021, it will be 75 years of the first meeting of the Constituent As
             <tr>
                 <td>1</td>                
                 <td style="width: 1%;">1</td>
-                <td>Name and territory of the Union.    </td>
+                <td>Name and Territory of the Union.</td>
                 <td><a href="pdf/Complete Debates/comp_15-11-1948.pdf" target="_blank">15.11.1948</a><br>
                 <a href="pdf/Complete Debates/Comp_17-11-1948.pdf" target="_blank">17.11.1948</a><br>
                 <a href="pdf/Complete Debates/comp_17-09-1949.pdf" target="_blank">17.09.1949</a><br>
@@ -206,7 +206,7 @@ In December 2021, it will be 75 years of the first meeting of the Constituent As
             <tr>
                 <td>9 (New)</td>
                 <td style="width: 1%;">Discussed with draft article 5</td>
-                <td>�Persons voluntarily acquiring citizenship of a foreign State not to be citizens.</td>
+                <td>Persons voluntarily acquiring citizenship of a foreign State not to be citizens.</td>
                 <td><a href="pdf/Complete Debates/comp_10-08-1949.pdf" target="_blank">10.08.1949</a><br>
                 <a href="pdf/Complete Debates/comp_11-08-1949.pdf" target="_blank">11.08.1949</a><br>
                 <a href="pdf/Complete Debates/Comp_12-08-1949.pdf" target="_blank">12.08.1949</a>
@@ -220,7 +220,7 @@ In December 2021, it will be 75 years of the first meeting of the Constituent As
              <tr>
                 <td>10</td>
                 <td style="width: 1%;">5C</td>
-                <td>�Continuance of the rights of citizenship</td>
+                <td>Continuance of the rights of citizenship</td>
                 <td><a href="pdf/Complete Debates/comp_10-08-1949.pdf" target="_blank">10.08.1949</a><br>
                 <a href="pdf/Complete Debates/comp_11-08-1949.pdf" target="_blank">11.08.1949</a><br>
                 <a href="pdf/Complete Debates/Comp_12-08-1949.pdf" target="_blank">12.08.1949</a>
@@ -248,7 +248,7 @@ In December 2021, it will be 75 years of the first meeting of the Constituent As
              <tr>
                 <td>12</td>
                 <td style="width: 1%;">7</td>
-                <td>Definitions: Fundamental Rights</td>
+                <td>Definition Fundamental Rights</td>
                 <td><a href="pdf/Complete Debates/comp_25-11-1948.pdf" target="_blank">25.11.1948</a>
                 </td>                
                 <td>7</td>
@@ -346,7 +346,7 @@ In December 2021, it will be 75 years of the first meeting of the Constituent As
                 <td>Protection in respect of conviction for offences.</td>
                 <td>
                     <a href="pdf/Complete Debates/comp_02-12-1948.pdf" target="_blank">02.12.1948</a><br>
-                    <a href="pdf/Complete Debates/comp_13-12-1948.pdf" target="_blank">03.12.1948</a><br>
+                    <a href="pdf/Complete Debates/comp_03-12-1948.pdf" target="_blank">03.12.1948</a><br>
                     <a href="pdf/Complete Debates/comp_06-12-1948.pdf" target="_blank">06.12.1948</a>
                 </td>                
                 <td>7<br>7<br>7</td>
@@ -388,7 +388,9 @@ In December 2021, it will be 75 years of the first meeting of the Constituent As
                 <td>23</td>
                 <td style="width: 1%;">17</td>
                 <td>Prohibition of traffic in human beings and forced labour.</td>
-                <td><a href="pdf/Complete Debates/comp_13-12-1948.pdf" target="_blank">03.12.1948</a></td>                
+                <td>
+                    <a href="pdf/Complete Debates/comp_03-12-1948.pdf" target="_blank">03.12.1948</a>
+                </td>                
                 <td>7</td>
                 <td><a href="pdf/03-12-1948 Page No 803-814.pdf" target="_blank">803-814</a></td>
             </tr>
@@ -396,7 +398,9 @@ In December 2021, it will be 75 years of the first meeting of the Constituent As
                 <td>24</td>
                 <td style="width: 1%;">18</td>
                 <td>Prohibition of employment of children in factories, etc</td>
-                <td><a href="pdf/Complete Debates/comp_13-12-1948.pdf" target="_blank">03.12.1948</a></td>                
+                <td>
+                    <a href="pdf/Complete Debates/comp_03-12-1948.pdf" target="_blank">03.12.1948</a>
+                </td>                
                 <td>7</td>
                 <td><a href="pdf/03-12-1948 Page No 814-815.pdf" target="_blank">814-815</a></td>
             </tr>
@@ -405,7 +409,7 @@ In December 2021, it will be 75 years of the first meeting of the Constituent As
                 <td style="width: 1%;">19</td>
                 <td>Freedom of conscience and free profession, practice and propagation of religion.</td>
                 <td>
-                    <a href="pdf/Complete Debates/comp_13-12-1948.pdf" target="_blank">03.12.1948</a><br>
+                    <a href="pdf/Complete Debates/comp_03-12-1948.pdf" target="_blank">03.12.1948</a><br>
                     <a href="pdf/Complete Debates/comp_06-12-1948.pdf" target="_blank">06.12.1948</a>
                 </td>                
                 <td>7<br>7</td>
@@ -469,11 +473,13 @@ In December 2021, it will be 75 years of the first meeting of the Constituent As
                 <td style="width: 1%;">23A</td>
                 <td>Right of minorities to establish and administer educational institutions</td>
                 <td>
-                    <a href="pdf/Complete Debates/comp_08-12-1948.pdf" target="_blank">08.12.1948</a>
+                    <a href="pdf/Complete Debates/comp_08-12-1948.pdf" target="_blank">08.12.1948</a><br>
+                    <a href="pdf/Complete Debates/comp_09-12-1948.pdf" target="_blank">09.12.1948</a>
                 </td>                
-                <td>7</td>
+                <td>7<br>7</td>
                 <td>
-                    <a href="pdf/07-12-1948 Page No 891-894.pdf" target="_blank">895-927</a>
+                    <a href="pdf/08-12-1948 Page No 895-927.pdf" target="_blank">895-927</a><br>
+                    <a href="pdf/09-12-1948 Page No 929-930.pdf" target="_blank">929-930</a>
                 </td>
             </tr>
             <tr>
@@ -707,8 +713,8 @@ In December 2021, it will be 75 years of the first meeting of the Constituent As
                 </td>                
                 <td>7<br>7</td>
                 <td>
-                    <a href="pdf/23-11-1948 Page No 552-553.pdf" target="_blank">553-554</a><br>
-                    <a href="pdf/23-11-1948 Page No 552-553.pdf" target="_blank">555-568</a>
+                    <a href="pdf/23-11-1948 Page No. 553-554.pdf" target="_blank">553-554</a><br>
+                    <a href="pdf/24-11-1948 Page no 555-568.pdf" target="_blank">555-568</a>
                     
                 </td>
             </tr>
@@ -897,7 +903,7 @@ In December 2021, it will be 75 years of the first meeting of the Constituent As
                 <td>7<br>10</td>
                 <td>                    
                     <a href="pdf/27-12-1948 Page No 1040-1047.pdf" target="_blank">1040-1047</a><br>
-                    <a href="#" target="_blank">266, 268, 274</a>
+                    <a href="pdf/14-10-1949 Page No 266,268,274.pdf" target="_blank">266, 268, 274</a>
                     
                 </td>
             </tr>
@@ -1043,16 +1049,16 @@ In December 2021, it will be 75 years of the first meeting of the Constituent As
                 </td>
             </tr>
             <tr>
-                <td>69</td>
+                <td>69(new)</td>
                 <td style="width: 1%;"></td>
                 <td>Oath or affirmation by the Vice-President</td>
                 <td>
-                    This article was not debated as it was not a part of the Draft Constitution, 1948. The Drafting Committee inserted it at the later stages.
+                    <a href="pdf/Complete Debates/comp_14-11-1949.pdf" target="_blank">14.11.1949</a>
 
                 </td>                
-                <td></td>
+                <td>11</td>
                 <td>                                       
-                    This article was not debated as it was not a part of the Draft Constitution, 1948. The Drafting Committee inserted it at the later stages.
+                    <a href="pdf/14-11-1949 Page No 474.pdf" target="_blank">474</a>
                     
                 </td>
             </tr>
@@ -1095,7 +1101,7 @@ In December 2021, it will be 75 years of the first meeting of the Constituent As
                 </td>                
                 <td>7<br>10</td>
                 <td>                                       
-                    <a href="pdf/29-12-1948 Page No 1118-1120.pdf" target="_blank">1118-1120</a>
+                    <a href="pdf/29-12-1948 Page No 1118-1120.pdf" target="_blank">1118-1120</a><br>
                     <a href="pdf/17-10-1949 Page No. 388-391.pdf" target="_blank">388-391</a>
                     
                 </td>
@@ -1111,7 +1117,7 @@ In December 2021, it will be 75 years of the first meeting of the Constituent As
                 </td>                
                 <td>7<br>7</td>
                 <td>                                       
-                    <a href="pdf/29-12-1948 Page No 1120-1127.pdf" target="_blank">1120-1127</a>
+                    <a href="pdf/29-12-1948 Page No 1120-1127.pdf" target="_blank">1120-1127</a><br>
                     <a href="pdf/30-12-1948 Page No. 1129-1141.pdf" target="_blank">1129-1141</a>
                     
                 </td>
@@ -1438,6 +1444,18 @@ In December 2021, it will be 75 years of the first meeting of the Constituent As
             </tr>
             <tr>
                 <td>99</td>
+                <td style="width: 1%;">81</td>
+                <td>Oath or affirmation by member</td>
+                <td>                                       
+                    <a href="pdf/Complete Debates/comp_19-05-1949.pdf" target="_blank">19.05.1949</a>
+                </td>                
+                <td>8</td>
+                <td>                                       
+                    <a href="pdf/19-05-1949 Page No 130-133.pdf" target="_blank">130-133</a>
+                </td>
+            </tr>
+            <tr>
+                <td>100</td>
                 <td style="width: 1%;">80</td>
                 <td>Voting in Houses, power of Houses to act notwithstanding vacancies and quorum</td>
                 <td>                                       
@@ -1445,19 +1463,7 @@ In December 2021, it will be 75 years of the first meeting of the Constituent As
                 </td>                
                 <td>8</td>
                 <td>                                       
-                    <a href="pdf/19-05-1949 Page 126-129.pdf" target="_blank">126-129</a>
-                </td>
-            </tr>
-            <tr>
-                <td>100</td>
-                <td style="width: 1%;">81</td>
-                <td>Oath or affirmation by members</td>
-                <td>                                       
-                    <a href="pdf/Complete Debates/comp_19-05-1949.pdf" target="_blank">19.05.1949</a>
-                </td>                
-                <td>8</td>
-                <td>                                       
-                    <a href="pdf/19-05-1949 Page No 130-133.pdf" target="_blank">130-133</a>
+                    <a href="pdf/19-05-1949 Page No 126-129.pdf" target="_blank">126-129</a>
                 </td>
             </tr>
             <tr>
@@ -1575,7 +1581,7 @@ In December 2021, it will be 75 years of the first meeting of the Constituent As
             <tr>
                 <td>110</td>
                 <td style="width: 1%;">90</td>
-                <td>Definition of “Money Bills”</td>
+                <td>Definition of âMoney Billsâ</td>
                 <td>                                       
                     <a href="pdf/Complete Debates/comp_20-05-1949.pdf" target="_blank">20.05.1949</a><br>
                     <a href="pdf/Complete Debates/comp_08-06-1949.pdf" target="_blank">08.06.1949</a>
@@ -1609,8 +1615,8 @@ In December 2021, it will be 75 years of the first meeting of the Constituent As
                 </td>                
                 <td>8<br>8<br>10</td>
                 <td>                                                           
-                    <a href="pdf/08-06-1949 Page No 742-744.pdf" target="_blank">742-744</a>
-                    <a href="pdf/10-06-1949 Page No 747-752.pdf" target="_blank">747-752</a>
+                    <a href="pdf/08-06-1949 Page No 742-744.pdf" target="_blank">742-744</a><br>
+                    <a href="pdf/10-06-1949 Page No 747-752.pdf" target="_blank">747-752</a><br>
                     <a href="pdf/13-10-1949 Page No 217.pdf" target="_blank">217</a>
                 </td>
             </tr>
@@ -1843,7 +1849,7 @@ In December 2021, it will be 75 years of the first meeting of the Constituent As
                 <td>8<br>10</td>
                 <td>                                                           
                     <a href="pdf/03-06-1949 Page No 588-591.pdf" target="_blank">588-591</a><br>
-                    <a href="pdf/14-10-1949 Page No 272-274.pdf" target="_blank">272-274</a>
+                    <a href="pdf/14-10-1949 Page No 272-273.pdf" target="_blank">272-273</a>
                 </td>
             </tr>
             <tr>
@@ -1853,7 +1859,7 @@ In December 2021, it will be 75 years of the first meeting of the Constituent As
                 <td>                                       
                     <a href="pdf/Complete Debates/comp_03-06-1949.pdf" target="_blank">03.06.1949</a>
                 </td>                
-                <td>10<br>10</td>
+                <td>10</td>
                 <td>                                                           
                     <a href="pdf/03-06-1949 Page No 591-615.pdf" target="_blank">591-615</a>
                 </td>
@@ -1890,7 +1896,7 @@ In December 2021, it will be 75 years of the first meeting of the Constituent As
             </tr>
             <tr>
                 <td>135</td>
-                <td style="width: 1%;">111B</td>
+                <td style="width: 1%;">112B</td>
                 <td>Jurisdiction and powers of the Federal Court under existing law to be exercisable by the Supreme Court.</td>
                 <td>                                       
                     <a href="pdf/Complete Debates/comp_13-06-1949.pdf" target="_blank">13.06.1949</a><br>
@@ -1918,7 +1924,7 @@ In December 2021, it will be 75 years of the first meeting of the Constituent As
             </tr>
             <tr>
                 <td>137</td>
-                <td style="width: 1%;">113</td>
+                <td style="width: 1%;">112A</td>
                 <td>Review of judgments or orders by the Supreme Court.</td>
                 <td>                                       
                     <a href="pdf/Complete Debates/comp_06-06-1949.pdf" target="_blank">06.06.1949</a>                    
@@ -2161,7 +2167,7 @@ In December 2021, it will be 75 years of the first meeting of the Constituent As
                 <td style="width: 1%;">132</td>
                 <td>Term of officeTerm of office of Governor </td>
                 <td>                                       
-                    <a href="pdf/Complete Debates/comp_01-06-1949.pdf" target="_blank">31.05.1949</a>
+                    <a href="pdf/Complete Debates/comp_31-05-1949.pdf" target="_blank">31.05.1949</a>
                 </td>                
                 <td>8</td>
                 <td>                                                           
@@ -2173,7 +2179,7 @@ In December 2021, it will be 75 years of the first meeting of the Constituent As
                 <td style="width: 1%;">134</td>
                 <td>Qualifications for appointment as Governor</td>
                 <td>                                       
-                    <a href="pdf/Complete Debates/comp_01-06-1949.pdf" target="_blank">31.05.1949</a>
+                    <a href="pdf/Complete Debates/comp_31-05-1949.pdf" target="_blank">31.05.1949</a>
                 </td>                
                 <td>8</td>
                 <td>                                                           
@@ -2287,7 +2293,7 @@ In December 2021, it will be 75 years of the first meeting of the Constituent As
                 <td style="width: 1%;">146</td>
                 <td>Conduct of business of the Government of a State</td>
                 <td>                                       
-                    <a href="pdf/Complete Debates/comp_22-08-1949.pdf" target="_blank">02.06.1949</a>
+                    <a href="pdf/Complete Debates/comp_02-06-1949.pdf" target="_blank">02.06.1949</a>
                 </td>                
                 <td>8</td>
                 <td>                                                           
@@ -2299,7 +2305,7 @@ In December 2021, it will be 75 years of the first meeting of the Constituent As
                 <td style="width: 1%;">147</td>
                 <td>Duties of Chief Minister as respects the furnishing of information to Governor, etc</td>
                 <td>                                       
-                    <a href="pdf/Complete Debates/comp_22-08-1949.pdf" target="_blank">02.06.1949</a><br>
+                    <a href="pdf/Complete Debates/comp_02-06-1949.pdf" target="_blank">02.06.1949</a><br>
                     <a href="pdf/Complete Debates/comp_17-10-1949.pdf" target="_blank">17.10.1949</a>
                 </td>                
                 <td>8<br>10</td>
@@ -2355,7 +2361,7 @@ In December 2021, it will be 75 years of the first meeting of the Constituent As
                 <td style="width: 1%;">150</td>
                 <td>Composition of the Legislative Councils</td>
                 <td>                                       
-                    <a href="pdf/Complete Debates/comp_22-08-1949.pdf" target="_blank">02.06.1949</a><br>
+                    <a href="pdf/Complete Debates/comp_02-06-1949.pdf" target="_blank">02.06.1949</a><br>
                     <a href="pdf/Complete Debates/comp_30-07-1949.pdf" target="_blank">30.07.1949</a><br>
                     <a href="pdf/Complete Debates/comp_19-08-1949.pdf" target="_blank">19.08.1949</a>
                 </td>                
@@ -2371,7 +2377,7 @@ In December 2021, it will be 75 years of the first meeting of the Constituent As
                 <td style="width: 1%;">151</td>
                 <td>Duration of State Legislatures</td>
                 <td>                                       
-                    <a href="pdf/Complete Debates/comp_22-08-1949.pdf" target="_blank">02.06.1949</a>
+                    <a href="pdf/Complete Debates/comp_02-06-1949.pdf" target="_blank">02.06.1949</a>
                 </td>                
                 <td>8</td>
                 <td>                                                           
@@ -2383,7 +2389,7 @@ In December 2021, it will be 75 years of the first meeting of the Constituent As
                 <td style="width: 1%;">152</td>
                 <td>Qualification for membership of the State Legislature</td>
                 <td>                                       
-                    <a href="pdf/Complete Debates/comp_22-08-1949.pdf" target="_blank">02.06.1949</a>
+                    <a href="pdf/Complete Debates/comp_02-06-1949.pdf" target="_blank">02.06.1949</a>
                 </td>                
                 <td>8</td>
                 <td>                                                           
@@ -2395,7 +2401,7 @@ In December 2021, it will be 75 years of the first meeting of the Constituent As
                 <td style="width: 1%;">153</td>
                 <td>Sessions of the State Legislature, prorogation and dissolution.</td>
                 <td>                                       
-                    <a href="pdf/Complete Debates/comp_22-08-1949.pdf" target="_blank">02.06.1949</a>
+                    <a href="pdf/Complete Debates/comp_02-06-1949.pdf" target="_blank">02.06.1949</a>
                 </td>                
                 <td>8</td>
                 <td>                                                           
@@ -2407,7 +2413,7 @@ In December 2021, it will be 75 years of the first meeting of the Constituent As
                 <td style="width: 1%;">154</td>
                 <td>Right of Governor to address and send messages to the House or Houses</td>
                 <td>                                       
-                    <a href="pdf/Complete Debates/comp_22-08-1949.pdf" target="_blank">02.06.1949</a>
+                    <a href="pdf/Complete Debates/comp_02-06-1949.pdf" target="_blank">02.06.1949</a>
                 </td>                
                 <td>8</td>
                 <td>                                                           
@@ -2419,7 +2425,7 @@ In December 2021, it will be 75 years of the first meeting of the Constituent As
                 <td style="width: 1%;">155</td>
                 <td>Special address by the Governor</td>
                 <td>                                       
-                    <a href="pdf/Complete Debates/comp_22-08-1949.pdf" target="_blank">02.06.1949</a>
+                    <a href="pdf/Complete Debates/comp_02-06-1949.pdf" target="_blank">02.06.1949</a>
                 </td>                
                 <td>8</td>
                 <td>                                                           
@@ -2431,7 +2437,7 @@ In December 2021, it will be 75 years of the first meeting of the Constituent As
                 <td style="width: 1%;">156</td>
                 <td>Rights of Ministers and Advocate General as respects the Houses</td>
                 <td>                                       
-                    <a href="pdf/Complete Debates/comp_22-08-1949.pdf" target="_blank">02.06.1949</a>
+                    <a href="pdf/Complete Debates/comp_02-06-1949.pdf" target="_blank">02.06.1949</a>
                 </td>                
                 <td>8</td>
                 <td>                                                           
@@ -2443,7 +2449,7 @@ In December 2021, it will be 75 years of the first meeting of the Constituent As
                 <td style="width: 1%;">157</td>
                 <td>The Speaker and Deputy Speaker of the Legislative Assembly.</td>
                 <td>                                       
-                    <a href="pdf/Complete Debates/comp_22-08-1949.pdf" target="_blank">02.06.1949</a>
+                    <a href="pdf/Complete Debates/comp_02-06-1949.pdf" target="_blank">02.06.1949</a>
                 </td>                
                 <td>8</td>
                 <td>                                                           
@@ -2455,7 +2461,7 @@ In December 2021, it will be 75 years of the first meeting of the Constituent As
                 <td style="width: 1%;">158</td>
                 <td>Vacation and resignation of, and removal from, the offices of Speaker and Deputy Speaker.</td>
                 <td>                                       
-                    <a href="pdf/Complete Debates/comp_22-08-1949.pdf" target="_blank">02.06.1949</a>
+                    <a href="pdf/Complete Debates/comp_02-06-1949.pdf" target="_blank">02.06.1949</a>
                 </td>                
                 <td>8</td>
                 <td>                                                           
@@ -2467,7 +2473,7 @@ In December 2021, it will be 75 years of the first meeting of the Constituent As
                 <td style="width: 1%;">159</td>
                 <td>Power of the Deputy Speaker or other person to perform the duties of the office of, or to act as, Speaker</td>
                 <td>                                       
-                    <a href="pdf/Complete Debates/comp_22-08-1949.pdf" target="_blank">02.06.1949</a>
+                    <a href="pdf/Complete Debates/comp_02-06-1949.pdf" target="_blank">02.06.1949</a>
                 </td>                
                 <td>8</td>
                 <td>                                                           
@@ -2479,7 +2485,7 @@ In December 2021, it will be 75 years of the first meeting of the Constituent As
                 <td style="width: 1%;">159A</td>
                 <td>The Speaker or the Deputy Speaker not to preside while a resolution for his removal from office is under consideration</td>
                 <td>                                       
-                    <a href="pdf/Complete Debates/comp_22-08-1949.pdf" target="_blank">02.06.1949</a>
+                    <a href="pdf/Complete Debates/comp_02-06-1949.pdf" target="_blank">02.06.1949</a>
                 </td>                
                 <td>8</td>
                 <td>                                                           
@@ -2491,7 +2497,7 @@ In December 2021, it will be 75 years of the first meeting of the Constituent As
                 <td style="width: 1%;">160</td>
                 <td>The Chairman and Deputy Chairman of the Legislative Council</td>
                 <td>                                       
-                    <a href="pdf/Complete Debates/comp_22-08-1949.pdf" target="_blank">02.06.1949</a>
+                    <a href="pdf/Complete Debates/comp_02-06-1949.pdf" target="_blank">02.06.1949</a>
                 </td>                
                 <td>8</td>
                 <td>                                                           
@@ -2503,7 +2509,7 @@ In December 2021, it will be 75 years of the first meeting of the Constituent As
                 <td style="width: 1%;">161</td>
                 <td>Vacation and resignation of, and removal from, the offices of Chairman and Deputy Chairman</td>
                 <td>                                       
-                    <a href="pdf/Complete Debates/comp_22-08-1949.pdf" target="_blank">02.06.1949</a>
+                    <a href="pdf/Complete Debates/comp_02-06-1949.pdf" target="_blank">02.06.1949</a>
                 </td>                
                 <td>8</td>
                 <td>                                                           
@@ -2515,7 +2521,7 @@ In December 2021, it will be 75 years of the first meeting of the Constituent As
                 <td style="width: 1%;">162</td>
                 <td>Power of the Deputy Chairman or other person to perform the duties of the office of, or to act as, Chairman</td>
                 <td>                                       
-                    <a href="pdf/Complete Debates/comp_22-08-1949.pdf" target="_blank">02.06.1949</a>
+                    <a href="pdf/Complete Debates/comp_02-06-1949.pdf" target="_blank">02.06.1949</a>
                 </td>                
                 <td>8</td>
                 <td>                                                           
@@ -2527,7 +2533,7 @@ In December 2021, it will be 75 years of the first meeting of the Constituent As
                 <td style="width: 1%;">162A</td>
                 <td>The Chairman or the Deputy Chairman not to preside while a resolution for his removal from office is under consideration</td>
                 <td>                                       
-                    <a href="pdf/Complete Debates/comp_22-08-1949.pdf" target="_blank">02.06.1949</a>
+                    <a href="pdf/Complete Debates/comp_02-06-1949.pdf" target="_blank">02.06.1949</a>
                 </td>                
                 <td>8</td>
                 <td>                                                           
@@ -2539,7 +2545,7 @@ In December 2021, it will be 75 years of the first meeting of the Constituent As
                 <td style="width: 1%;">163</td>
                 <td>Salaries and allowances of the Speaker and Deputy Speaker and the Chairman and Deputy Chairman</td>
                 <td>                                       
-                    <a href="pdf/Complete Debates/comp_22-08-1949.pdf" target="_blank">02.06.1949</a>
+                    <a href="pdf/Complete Debates/comp_02-06-1949.pdf" target="_blank">02.06.1949</a>
                 </td>                
                 <td>8</td>
                 <td>                                                           
@@ -2563,7 +2569,7 @@ In December 2021, it will be 75 years of the first meeting of the Constituent As
                 <td style="width: 1%;">165</td>
                 <td>Oath or affirmation by members</td>
                 <td>                                       
-                    <a href="pdf/Complete Debates/comp_22-08-1949.pdf" target="_blank">02.06.1949</a>
+                    <a href="pdf/Complete Debates/comp_02-06-1949.pdf" target="_blank">02.06.1949</a>
                 </td>                
                 <td>8</td>
                 <td>                                                           
@@ -2575,15 +2581,13 @@ In December 2021, it will be 75 years of the first meeting of the Constituent As
                 <td style="width: 1%;">164</td>
                 <td>Voting in Houses, power of Houses to act notwithstanding vacancies and quorum</td>
                 <td>                                       
-                    <a href="pdf/Complete Debates/comp_22-08-1949.pdf" target="_blank">02.06.1949</a><br>
                     <a href="pdf/Complete Debates/comp_14-06-1949.pdf" target="_blank">14.06.1949</a><br>
                     <a href="pdf/Complete Debates/comp_16-06-1949.pdf" target="_blank">16.06.1949</a>
                 </td>                
-                <td>8<br>8<br>8</td>
+                <td>8<br>8</td>
                 <td>                                                           
-                    <a href="pdf/02-06-1949 Page No 566.pdf" target="_blank">566</a><br>
                     <a href="pdf/14-06-1949 Page No 859-860.pdf" target="_blank">859-860</a><br>
-                    <a href="pdf/14-06-1949 Page No 859-860.pdf" target="_blank">952</a>
+                    <a href="pdf/16-06-1949 Page No 952.pdf" target="_blank">952</a>
                 </td>
             </tr>
             <tr>
@@ -2591,7 +2595,7 @@ In December 2021, it will be 75 years of the first meeting of the Constituent As
                 <td style="width: 1%;">166</td>
                 <td>Vacation of seats</td>
                 <td>                                       
-                    <a href="pdf/Complete Debates/comp_22-08-1949.pdf" target="_blank">02.06.1949</a>
+                    <a href="pdf/Complete Debates/comp_02-06-1949.pdf" target="_blank">02.06.1949</a>
                 </td>                
                 <td>8</td>
                 <td>                                                           
@@ -2603,7 +2607,7 @@ In December 2021, it will be 75 years of the first meeting of the Constituent As
                 <td style="width: 1%;">167</td>
                 <td>Disqualifications for membership</td>
                 <td>                                       
-                    <a href="pdf/Complete Debates/comp_22-08-1949.pdf" target="_blank">02.06.1949</a>
+                    <a href="pdf/Complete Debates/comp_02-06-1949.pdf" target="_blank">02.06.1949</a>
                 </td>                
                 <td>8</td>
                 <td>                                                           
@@ -2703,7 +2707,7 @@ In December 2021, it will be 75 years of the first meeting of the Constituent As
             <tr>
                 <td>199</td>
                 <td style="width: 1%;">174</td>
-                <td>Definition of “Money Bills”</td>
+                <td>Definition of âMoney Billsâ</td>
                 <td>                                       
                     <a href="pdf/Complete Debates/comp_10-06-1949.pdf" target="_blank">10.06.1949</a>
                 </td>                
@@ -2717,14 +2721,12 @@ In December 2021, it will be 75 years of the first meeting of the Constituent As
                 <td style="width: 1%;">175</td>
                 <td>Assent to Bills</td>
                 <td>                                       
-                    <a href="pdf/Complete Debates/comp_14-06-1949.pdf" target="_blank">14.06.1949</a><br>
                     <a href="pdf/Complete Debates/comp_30-07-1949.pdf" target="_blank">30.07.1949</a><br>
                     <a href="pdf/Complete Debates/comp_01-08-1949.pdf" target="_blank">01.08.1949</a><br>
                     <a href="pdf/Complete Debates/comp_17-10-1949.pdf" target="_blank">17.10.1949</a>
                 </td>                
-                <td>8<br>9<br>9<br>10</td>
+                <td>9<br>9<br>10</td>
                 <td>                                                           
-                    <a href="pdf/14-06-1949 Page No 869.pdf" target="_blank">869</a><br>
                     <a href="pdf/30-07-1949 Page No 41-42.pdf" target="_blank">41-42</a><br>
                     <a href="pdf/01-08-1949 Page No 43, 59-62.pdf" target="_blank">43, 59-62</a><br>
                     <a href="pdf/17-10-1949 Page No 392-394.pdf" target="_blank">392-394</a>
@@ -2751,7 +2753,7 @@ In December 2021, it will be 75 years of the first meeting of the Constituent As
                 </td>                
                 <td>8</td>
                 <td>                                                           
-                    <a href="pdf/03-12-1948 Page No 794-797.pdf" target="_blank">784-785</a>
+                    <a href="pdf/10-06-1949 Page No 784-785.pdf" target="_blank">784-785</a>
                 </td>
             </tr>
             <tr>
@@ -2843,12 +2845,10 @@ In December 2021, it will be 75 years of the first meeting of the Constituent As
                 <td style="width: 1%;">184</td>
                 <td>Language to be used in the Legislature</td>
                 <td>                                       
-                    <a href="pdf/Complete Debates/comp_10-06-1949.pdf" target="_blank">10.06.1949</a><br>
                     <a href="pdf/Complete Debates/comp_17-09-1949.pdf" target="_blank">17.09.1949</a>
                 </td>                
-                <td>8<br>9</td>
+                <td>9</td>
                 <td>                                                           
-                    <a href="pdf/10-06-1949 Page No 790.pdf" target="_blank">790</a><br>
                     <a href="pdf/17-09-1949- Page No 1667-1670.pdf" target="_blank">1667-1670</a>
                 </td>
             </tr>
@@ -2871,7 +2871,7 @@ In December 2021, it will be 75 years of the first meeting of the Constituent As
                 <td>                                       
                     <a href="pdf/Complete Debates/comp_10-06-1949.pdf" target="_blank">10.06.1949</a>
                 </td>                
-                <td></td>
+                <td>8</td>
                 <td>                                                           
                     <a href="pdf/10-06-1949 Page No 791.pdf" target="_blank">791</a>
                 </td>
@@ -3043,12 +3043,12 @@ In December 2021, it will be 75 years of the first meeting of the Constituent As
                 <td style="width: 1%;">202</td>
                 <td>Power of High Courts to issue certain writs</td>
                 <td>                                       
-                    <a href="pdf/Complete Debates/comp_07-06-1949.pdf" target="_blank">07.06.1949</a>
+                    <a href="pdf/Complete Debates/comp_07-06-1949.pdf" target="_blank">07.06.1949</a><br>
                     <a href="pdf/Complete Debates/comp_09-09-1949.pdf" target="_blank">09.09.1949</a>
                 </td>                
                 <td>8<br>9</td>
                 <td>                                                           
-                    <a href="pdf/07-06-1949 Page No 695-697.pdf" target="_blank">695-697</a>
+                    <a href="pdf/07-06-1949 Page No 695-697.pdf" target="_blank">695-697</a><br>
                     <a href="pdf/09-09-1949 Page No 1186-1187.pdf" target="_blank">1186-1187</a>
                 </td>
             </tr>
@@ -3057,15 +3057,11 @@ In December 2021, it will be 75 years of the first meeting of the Constituent As
                 <td style="width: 1%;">203</td>
                 <td>Power of superintendence over all courts by the High Court</td>
                 <td>                                       
-                    <a href="pdf/Complete Debates/comp_07-06-1949.pdf" target="_blank">07.06.1949</a><br>
-                    <a href="pdf/Complete Debates/comp_14-06-1949.pdf" target="_blank">14.06.1949</a><br>
                     <a href="pdf/Complete Debates/comp_15-06-1949.pdf" target="_blank">15.06.1949</a><br>
                     <a href="pdf/Complete Debates/comp_16-10-1949.pdf" target="_blank">16.10.1949</a>
                 </td>                
-                <td>8<br>8<br>8<br>10</td>
+                <td>8<br>10</td>
                 <td>                                                           
-                    <a href="pdf/07-06-1949 Page No 698.pdf" target="_blank">698</a><Br>
-                    <a href="pdf/14-06-1949 Page No 873.pdf" target="_blank">873</a><Br>
                     <a href="pdf/15-06-1949 Page No 875-877.pdf" target="_blank">875-877</a><br>
                     <a href="pdf/16-10-1949 Page No 380.pdf" target="_blank">380</a>
                 </td>
@@ -3101,11 +3097,13 @@ In December 2021, it will be 75 years of the first meeting of the Constituent As
                 <td style="width: 1%;">207</td>
                 <td>Extension of jurisdiction of High Courts to Union territories</td>
                 <td>                                       
-                    <a href="#" target="_blank">This Article in its present form was not debated in the Constituent Assembly. It was substituted by the Constitution (7th Amendment) Act, 1956.</a>
+                    
+                    <a href="pdf/Complete Debates/comp_15-11-1949.pdf" target="_blank">15.11.1949</a>
                 </td>                
-                <td></td>
+                <td>11</td>
                 <td>                                                           
-                    <a href="#" target="_blank">This Article in its present form was not debated in the Constituent Assembly. It was substituted by the Constitution (7th Amendment) Act, 1956.</a>
+                    
+                    <a href="pdf/15-11-1949 Page No 521-545.pdf" target="_blank">521-545</a>
                 </td>
             </tr>
             <tr>
@@ -3113,11 +3111,11 @@ In December 2021, it will be 75 years of the first meeting of the Constituent As
                 <td style="width: 1%;">208</td>
                 <td>Establishment of a common High Court for two or more States</td>
                 <td>                                       
-                    <a href="#" target="_blank">Not Debated</a>
+                     <a href="pdf/Complete Debates/comp_14-06-1949.pdf" target="_blank">14.06.1949</a>
                 </td>                
-                <td></td>
+                <td>8</td>
                 <td>                                                           
-                    <a href="#" target="_blank">Not Debated</a>
+                    <a href="pdf/14-06-1949 Page No 873.pdf" target="_blank">873</a>
                 </td>
             </tr>
             <tr>
@@ -3125,7 +3123,7 @@ In December 2021, it will be 75 years of the first meeting of the Constituent As
                 <td style="width: 1%;">209</td>
                 <td>Interpretation [Repealed]</td>
                 <td>                                       
-                    <a href="pdf/Complete Debates/comp_08-06-1949.pdf" target="_blank">14.06.1949</a>
+                    <a href="pdf/Complete Debates/comp_14-06-1949.pdf" target="_blank">14.06.1949</a>
                 </td>                
                 <td>8</td>
                 <td>                                                           
@@ -3137,11 +3135,11 @@ In December 2021, it will be 75 years of the first meeting of the Constituent As
                 <td style="width: 1%;">209A</td>
                 <td>Appointment of district judges</td>
                 <td>                                       
-                    <a href="pdf/Complete Debates/comp_16-09-1949.pdf" target="_blank">16.09.1949</a>
+                    <a href="pdf/Complete Debates/comp_08-06-1949.pdf" target="_blank">14.06.1949</a>
                 </td>                
-                <td>9</td>
+                <td>8</td>
                 <td>                                                           
-                    <a href="pdf/16-09-1949 Page No 1572-1580.pdf" target="_blank">1572-1580</a>
+                    <a href="pdf/14-06-1949 Page No 873.pdf" target="_blank">873</a>
                 </td>
             </tr>
             <tr>
@@ -3183,7 +3181,7 @@ In December 2021, it will be 75 years of the first meeting of the Constituent As
             <tr>
                 <td>237</td>
                 <td style="width: 1%;">209E</td>
-                <td>Application of the provisions of this Chapter to certain class or classes of magistrates</td>
+                <td>Application of the provisions of this Chapter to certain class or classes of Magistrates</td>
                 <td>                                       
                     <a href="pdf/Complete Debates/comp_16-09-1949.pdf" target="_blank">16.09.1949</a>
                 </td>                
@@ -3441,7 +3439,7 @@ In December 2021, it will be 75 years of the first meeting of the Constituent As
                 <td>8<br>9</td>
                 <td>                                                           
                     <a href="pdf/13-06-1949 Page No 816.pdf" target="_blank">816</a><br>
-                    <a href="pdf/09-09-1949 Page No 1185-1187.pdf" target="_blank">1185-1187</a>
+                    <a href="pdf/09-09-1949 Page No 1187-1189.pdf" target="_blank">1187-1189</a>
                 </td>
             </tr>
             <tr>
@@ -3465,7 +3463,7 @@ In December 2021, it will be 75 years of the first meeting of the Constituent As
                 </td>                
                 <td>10</td>
                 <td>                                                           
-                    <a href="pdf/13-10-1949 Page No 175, 177, 179, 182, 204, 205, 207.pdf" target="_blank">175, 177, 179, 182, 205, 207</a>
+                    <a href="pdf/13-10-1949 Page No 175,177,179,182, 205, 207.pdf" target="_blank">175, 177, 179, 182, 205, 207</a>
                 </td>
             </tr>
             <tr>
@@ -3497,7 +3495,7 @@ In December 2021, it will be 75 years of the first meeting of the Constituent As
             <tr>
                 <td>262</td>
                 <td style="width: 1%;">242A</td>
-                <td>Adjudication of disputes relating to waters of interState rivers or river valleys.</td>
+                <td>Adjudication of disputes relating to waters of inter State rivers or river valleys.</td>
                 <td>                                                           
                     <a href="pdf/Complete Debates/comp_09-09-1949.pdf" target="_blank">09.09.1949</a>
                 </td>                
@@ -3715,7 +3713,7 @@ In December 2021, it will be 75 years of the first meeting of the Constituent As
             <tr>
                 <td>279</td>
                 <td style="width: 1%;">259</td>
-                <td>Calculation of “net proceeds”, etc.</td>
+                <td>Calculation of ânet proceedsâ, etc.</td>
                 <td>                                                           
                     <a href="pdf/Complete Debates/comp_09-08-1949.pdf" target="_blank">09.08.1949</a><br>
                     <a href="pdf/Complete Debates/comp_13-10-1949.pdf" target="_blank">13.10.1949</a>
@@ -3773,7 +3771,7 @@ In December 2021, it will be 75 years of the first meeting of the Constituent As
                     <a href="pdf/Complete Debates/comp_09-09-1949.pdf" target="_blank">09.09.1949</a><br>
                     <a href="pdf/Complete Debates/comp_13-10-1949.pdf" target="_blank">13.10.1949</a>
                 </td>                
-                <td>9<br>9<br>9</td>
+                <td>9<br>9<br>10</td>
                 <td>                                                                               
                     <a href="pdf/10-08-1949 Page No 330.pdf" target="_blank">330</a><br>
                     <a href="pdf/09-09-1949 Page No 1190.pdf" target="_blank">1190</a><br>
@@ -3783,7 +3781,7 @@ In December 2021, it will be 75 years of the first meeting of the Constituent As
             <tr>
                 <td>284</td>
                 <td style="width: 1%;">263A</td>
-                <td>Custody of suitors’ deposits and other moneys received by public servants and courts.</td>
+                <td>Custody of  deposits and other moneys received by public servants and courts.</td>
                 <td>                                                           
                     <a href="pdf/Complete Debates/comp_09-09-1949.pdf" target="_blank">09.09.1949</a>
                 </td>                
@@ -4105,7 +4103,7 @@ In December 2021, it will be 75 years of the first meeting of the Constituent As
                 </td>                
                 <td>9</td>
                 <td>                                                                               
-                    <a href="pdf/07-09-1949 Page No 1084-1094.pdf" target="_blank">1084-1094</a>
+                    <a href="pdf/07-09-1949 Page No 1094-1095.pdf" target="_blank">1094-1095</a>
                 </td>
             </tr>
             <tr>
@@ -4118,7 +4116,7 @@ In December 2021, it will be 75 years of the first meeting of the Constituent As
                 </td>                
                 <td>9<br>9</td>
                 <td>                                                                               
-                    <a href="pdf/07-09-1949 Page No 1085, 1095-1097.pdf" target="_blank">1082, 1095-1097</a><br>
+                    <a href="pdf/07-09-1949 Page No 1085, 1095-1097.pdf" target="_blank">1085, 1095-1097</a><br>
                     <a href="pdf/08-09-1949 Page No 1101-1118, 1128, 1136, 1139, 1145.pdf" target="_blank">1101-1118, 1128,1136, 1139,1145</a>
                 </td>
             </tr>
@@ -4353,7 +4351,7 @@ In December 2021, it will be 75 years of the first meeting of the Constituent As
                 <td>8<br>9</td>
                 <td>                                                                               
                     <a href="pdf/23-08-1949 Page No 632-635.pdf" target="_blank">632-635</a><br>
-                    <a href="pdf/24-08-1949 Page No 637-659, 662.pdf" target="_blank">637-659, 662</a>
+                    <a href="pdf/24-08-1949 Page No 637-659.pdf" target="_blank">637-659</a>
                 </td>
             </tr>
             <tr>
@@ -4467,7 +4465,7 @@ In December 2021, it will be 75 years of the first meeting of the Constituent As
                 </td>                
                 <td>8</td>
                 <td>                                                                               
-                    <a href="pdf/26-08-1949 Page No 703-706.pdf" target="_blank">942-943</a>
+                    <a href="pdf/16-06-1949 Page No 942-943.pdf" target="_blank">942-943</a>
                 </td>
             </tr>
             <tr>
@@ -4489,9 +4487,9 @@ In December 2021, it will be 75 years of the first meeting of the Constituent As
                 <td>                                                           
                     <a href="pdf/Complete Debates/comp_17-09-1949.pdf" target="_blank">17.09.1949</a>
                 </td>                
-                <td>8</td>
+                <td>9</td>
                 <td>                                                                               
-                    <a href="pdf/17-09-1949 Page No 1636-1640.pdf" target="_blank">1636-1640</a>
+                    <a href="pdf/17-09-1949 Page No 1638-1642.pdf" target="_blank">1638-1642</a>
                 </td>
             </tr>
             <tr>
@@ -4501,9 +4499,9 @@ In December 2021, it will be 75 years of the first meeting of the Constituent As
                 <td>                                                           
                     <a href="pdf/Complete Debates/comp_17-09-1949.pdf" target="_blank">17.09.1949</a>
                 </td>                
-                <td>8</td>
+                <td>9</td>
                 <td>                                                                               
-                    <a href="pdf/17-09-1949 Page No 1636-1640.pdf" target="_blank">1636-1640</a>
+                    <a href="pdf/17-09-1949 Page No 1638-1642.pdf" target="_blank">1638-1642</a>
                 </td>
             </tr>
             <tr>
@@ -4821,11 +4819,11 @@ In December 2021, it will be 75 years of the first meeting of the Constituent As
                 <td style="width: 1%;"></td>
                 <td>Effect of failure to comply with, or to give effect to, directions given by the Union</td>
                 <td>                                                           
-                    <a href="#" target="_blank">No Debates Found</a>
+                    <a href="pdf/Complete Debates/comp_15-11-1949.pdf" target="_blank">15.11.1949</a>
                 </td>                
                 <td></td>
                 <td>                                                                               
-                    <a href="#" target="_blank">No Debates Found</a>
+                    <a href="pdf/15-11-1949 Page No 506-519.pdf" target="_blank">506-519</a>
                 </td>
             </tr>
             <tr>
@@ -4855,7 +4853,9 @@ In December 2021, it will be 75 years of the first meeting of the Constituent As
                 </td>                
                 <td>9<br>9<br>10</td>
                 <td>                                                                               
-                    No Debates Found
+                    <a href="pdf/16-09-1949 Page No 1584-1589.pdf" target="_blank">1584-1589</a><br>
+                    <a href="pdf/17-09-1949 Page No 1634-1644.pdf" target="_blank">1634-1644</a><br>
+                   <a href="pdf/14-10-1949 Page No 278-286.pdf" target="_blank">278-286</a>
 
                 </td>
             </tr>
@@ -4926,11 +4926,11 @@ In December 2021, it will be 75 years of the first meeting of the Constituent As
                 <td style="width: 1%;"></td>
                 <td>Power of President to make order in respect of persons under preventive detention in certain cases</td>
                 <td>                                                           
-                    No Debates Found
+                    <a href="pdf/Complete Debates/comp_15-11-1949.pdf" target="_blank">15.11.1949</a>
                 </td>                
-                <td></td>
+                <td>11</td>
                 <td>                                                                               
-                    No Debates Found
+                   <a href="pdf/15-11-1949 Page No 520-521.pdf" target="_blank">520-521</a>
                 </td>
             </tr>
             <tr>
@@ -5140,15 +5140,15 @@ In December 2021, it will be 75 years of the first meeting of the Constituent As
                 </td>
             </tr>
             <tr>
-                <td>391</td>
+                <td>391(new)</td>
                 <td style="width: 1%;"></td>
                 <td>Power of the President to amend the First and Fourth Schedule in certain contingencies (Repealed)</td>
                 <td>                                                           
-                
+                <a href="pdf/Complete Debates/comp_15-11-1949.pdf" target="_blank">15.11.1949</a>
                 </td>                
-                <td>10</td>
+                <td>11</td>
                 <td>                                                                               
-
+                    <a href="pdf/15-11-1949 Page No 523.pdf" target="_blank">523</a>
                 </td>
             </tr>
             <tr>
@@ -5199,17 +5199,152 @@ In December 2021, it will be 75 years of the first meeting of the Constituent As
                     <a href="pdf/17-10-1949 Page No 411-421.pdf" target="_blank">411-421</a>
                 </td>
             </tr>
-        </tbody>
-        <tfoot>
             <tr>
-                <th>Article in the present Constitution</th>
-                <th>Corresponding Clause in the draft constitution</th>
-                <th>Subject Heading</th>
-                <th>Debate Dates</th>
-                <th>Vol No</th>
-                <th>Page No.</th>
+                <td>First Schedule</td>
+                <td style="width: 1%;">First Schedule</td>
+                <td></td>
+                <td>                                                           
+                    <a href="pdf/Complete Debates/comp_14-10-1949.pdf" target="_blank">14.10.1949</a><br>
+                    <a href="pdf/Complete Debates/comp_15-10-1949.pdf" target="_blank">15.10.1949</a>
+                    
+                </td>                
+                <td>10<br>10</td>
+                <td>                                                                               
+                    <a href="pdf/14-10-1949 Page No 286-288.pdf" target="_blank">286-288</a><br>
+                    <a href="pdf/15-10-1949 Page No 312-324.pdf" target="_blank">312-324</a>
+                </td>
             </tr>
-        </tfoot>
+            <tr>
+                <td>Second Schedule</td>
+                <td style="width: 1%;">Second Schedule</td>
+                <td></td>
+                <td>                                                           
+                    <a href="pdf/Complete Debates/comp_11-10-1949.pdf" target="_blank">11.10.1949</a><br>
+                    <a href="pdf/Complete Debates/comp_12-10-1949.pdf" target="_blank">12.10.1949</a>
+                    
+                </td>                
+                <td>10<br>10</td>
+                <td>                                                                               
+                    <a href="pdf/11-10-1949 Page No 116-118.pdf" target="_blank">116-118</a><br>
+                    <a href="pdf/12-10-1949 Page No 119-153.pdf" target="_blank">119-153</a>
+                </td>
+            </tr>
+            <tr>
+                <td>Third Schedule</td>
+                <td style="width: 1%;">Third Schedule</td>
+                <td></td>
+                <td>                                                           
+                    <a href="pdf/Complete Debates/comp_26-08-1949.pdf" target="_blank">26.08.1949</a><br>
+                    <a href="pdf/Complete Debates/comp_17-10-1949.pdf" target="_blank">16.10.1949</a>
+                    
+                </td>                
+                <td>9<br>10</td>
+                <td>                                                                               
+                    <a href="pdf/26-08-1949 Page No 706-717.pdf" target="_blank">706-717</a><br>
+                    <a href="pdf/16-10-1949 Page No 347-348.pdf" target="_blank">347-348</a>
+                </td>
+            </tr>
+            <tr>
+                <td> Fourth Schedule (IIIA)</td>
+                <td style="width: 1%;"> Fourth Schedule (IIIA)</td>
+                <td></td>
+                <td>                                                           
+                    <a href="pdf/Complete Debates/comp_17-10-1949.pdf" target="_blank">17.10.1949</a>
+                    
+                </td>                
+                <td>10</td>
+                <td>                                                                               
+                    <a href="pdf/17-10-1949 Page No 407-411.pdf" target="_blank">407-411</a>
+                </td>
+            </tr>
+            <tr>
+                <td>Fifth Schedule</td>
+                <td style="width: 1%;">Fifth Schedule</td>
+                <td></td>
+                <td>                                                                               
+                    <a href="pdf/Complete Debates/comp_05-09-1949.pdf" target="_blank">05.09.1949</a>
+                    
+                </td>                
+                <td>9</td>
+                <td>                                                                                                   
+                    <a href="pdf/05-09-1949 Page No 967-1003.pdf" target="_blank">967-1003</a>
+                </td>
+            </tr>
+            <tr>
+                <td>Fifth Schedule  (Part D)</td>
+                <td style="width: 1%;"></td>
+                <td></td>
+                <td>                                                                               
+                    <a href="pdf/Complete Debates/comp_05-09-1949.pdf" target="_blank">05.09.1949</a>
+                    
+                </td>                
+                <td></td>
+                <td>                                                                                                   
+                    <a href="#" target="_blank"></a>
+                </td>
+            </tr>
+             <tr>
+                <td>Sixth Schedule</td>
+                <td style="width: 1%;">Sixth Schedule</td>
+                <td></td>
+                <td>                                                           
+                    <a href="pdf/Complete Debates/comp_05-09-1949.pdf" target="_blank">05.09.1949</a><br>
+                    <a href="pdf/Complete Debates/comp_06-09-1949.pdf" target="_blank">06.09.1949</a><br>
+                    <a href="pdf/Complete Debates/comp_07-09-1949.pdf" target="_blank">07.09.1949</a>
+                    
+                </td>                
+                <td>9<br>9<br>9</td>
+                <td>                                                                               
+                    <a href="pdf/05-09-1949 Page No 1003-1008.pdf" target="_blank">1003-1008</a><br>
+                    <a href="pdf/06-09-1949 Page No 1009-1054.pdf" target="_blank">1009-1054</a><br>
+                    <a href="pdf/07-09-1949 Page No 1055-1084.pdf" target="_blank">1055-1084</a>
+                </td>
+            </tr>
+             <tr>
+                <td>Seventh Schedule</td>
+                <td style="width: 1%;">Seventh Schedule</td>
+                <td></td>
+                <td>                                                           
+                    <a href="pdf/Complete Debates/comp_26-08-1949.pdf" target="_blank">26.08.1949</a><br>
+                    <a href="pdf/Complete Debates/comp_29-08-1949.pdf" target="_blank">29.08.1949</a><br>
+                    <a href="pdf/Complete Debates/comp_30-08-1949.pdf" target="_blank">30.08.1949</a><br>
+                    <a href="pdf/Complete Debates/comp_31-08-1949.pdf" target="_blank">31.08.1949</a><br>
+                    <a href="pdf/Complete Debates/comp_01-09-1949.pdf" target="_blank">01.09.1949</a><br>
+                    <a href="pdf/Complete Debates/comp_02-09-1949.pdf" target="_blank">02.09.1949</a><br>
+                    <a href="pdf/Complete Debates/comp_03-09-1949.pdf" target="_blank">03.09.1949</a><br>
+                    <a href="pdf/Complete Debates/comp_09-09-1949.pdf" target="_blank">09.09.1949</a><br>
+                    <a href="pdf/Complete Debates/comp_13-10-1949.pdf" target="_blank">13.10.1949</a><br>
+                    <a href="pdf/Complete Debates/comp_17-10-1949.pdf" target="_blank">17.10.1949</a>
+                    
+                </td>                
+                <td><br>9<br>9<br>9<br>9</br>9<br>9<br>9<br>10</td>
+                <td>                                                                               
+                    <a href="#" target="_blank"></a><br>
+                    <a href="pdf/29-08-1949 Page No 719-736.pdf" target="_blank">719-736</a><br>
+                    <a href="pdf/30-08-1949 Page No 737-782.pdf" target="_blank">737-782</a><br>
+                    <a href="pdf/31-08-1949 Page No 783-828.pdf" target="_blank">783-828</a><br>
+                    <a href="pdf/01-09-1949 Page No 830-875.pdf" target="_blank">830-875</a><br>
+                    <a href="pdf/02-09-1949 Page No 877-928.pdf" target="_blank">877-928</a><br>
+                    <a href="pdf/03-09-1949 Page No 929-965.pdf" target="_blank">929-965</a><br>
+                    <a href="pdf/09-09-1949 Page No 1174-1185.pdf" target="_blank">1174-1185</a><br>
+                    <a href="pdf/13-10-1949 Page No 218-219.pdf" target="_blank">218-219</a><br>
+                    <a href="#" target="_blank"></a>
+                </td>
+            </tr>
+              <tr>
+                <td>Eighth Schedule (Schedule VII-A)</td>
+                <td style="width: 1%;">Eighth Schedule (Schedule VII-A)</td>
+                <td></td>
+                <td>                                                                               
+                    <a href="pdf/Complete Debates/comp_14-09-1949.pdf" target="_blank">14.09.1949</a>
+                    
+                </td>                
+                <td>9</td>
+                <td>                                                                                                   
+                    <a href="pdf/14-09-1949 Page No 1482-1491.pdf" target="_blank">1482-1491</a>
+                </td>
+            </tr>
+        </tbody>   
     </table>
 <br>
 
