@@ -113,13 +113,13 @@ Newspaper Info
         <label>News  Date<span style="color:red;">*</span></label>
         <input class="form-control" type="date" name="newsdate" id="newsdate"   />
         </div>
-        <div class="form-group">
-        <label>Subject<span style="color:red;">*</span></label>
-        <input class="form-control" type="text" name="newssub" id="newssub"   />
+        <div class="form-group">           
+            <label>Subject<span style="color:red;">*</span></label>
+            <input class="form-control" type="text" name="newssub" id="newssub" placeholder="Enter Subject Comma Separated.." />
         </div>
         <div class="form-group">
         <label>News Article<span style="color:red;">*</span></label>
-        <textarea class="form-control" id="newsarticle" name="newsarticle"></textarea>
+        <textarea class="form-control" id="newsarticle" name="newsarticle" placeholder="Enter Article For News.."></textarea>
         </div>
         <div class="form-group">
         <label>Upload Pdf<span style="color:red;">*</span></label>

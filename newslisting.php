@@ -37,10 +37,14 @@ while ($res = $titlestmt->fetch(PDO::FETCH_ASSOC)){
 
 
   $cond="";
-  $search_keyword = '';$search_skeyword='';
+  $search_keyword = '';$search_skeyword=''; $search_subject ='';
   if(!empty($_POST['search']['keyword'])) {
     $search_keyword = $_POST['search']['keyword'];
     $cond.=" AND new_article LIKE :keyword ";
+  }
+  if(!empty($_POST['subject']['sub_keyword'])) {
+    $search_subject = $_POST['subject']['sub_keyword'];
+    $cond.=" AND subject LIKE :sub_keyword ";
   }
 
   if(!empty($_POST['title']['skeyword'])) {
@@ -76,6 +80,7 @@ $sql = 'SELECT *,YEAR(news_date) AS newsyear FROM tbl_news WHERE status=1 '. $co
    //$pagination_statement->execute( $search_keyword,$tuts_link);
 
   if($search_keyword) $pagination_statement->bindValue(':keyword', '%' . $search_keyword . '%', PDO::PARAM_STR);
+  if($search_subject) $pagination_statement->bindValue(':sub_keyword', '%' . $search_subject . '%', PDO::PARAM_STR);
   if(trim($search_skeyword)) $pagination_statement->bindValue(':skeyword',$search_skeyword , PDO::PARAM_STR);
   if(trim($search_nkeyword)) $pagination_statement->bindValue(':nkeyword',$search_nkeyword , PDO::PARAM_STR);
   //print_r($pagination_statement);
@@ -101,6 +106,7 @@ $sql = 'SELECT *,YEAR(news_date) AS newsyear FROM tbl_news WHERE status=1 '. $co
   $pdo_statement = $connection->prepare($query);
   //$pdo_statement->bindValue(':keyword', '%' . $search_keyword . '%', PDO::PARAM_STR);
   if($search_keyword) $pdo_statement->bindValue(':keyword', '%' . $search_keyword . '%', PDO::PARAM_STR);
+  if($search_subject) $pdo_statement->bindValue(':sub_keyword', '%' . $search_subject . '%', PDO::PARAM_STR);
   if(trim($search_skeyword)) $pdo_statement->bindValue(':skeyword', $search_skeyword, PDO::PARAM_STR);
    if(trim($search_nkeyword)) $pdo_statement->bindValue(':nkeyword', $search_nkeyword, PDO::PARAM_STR);
   $pdo_statement->execute();
@@ -277,14 +283,17 @@ include_once("file/includes/header.php");
       </select>
 </div>
 <div class="col-sm-3">
+<input type="text" name='subject[sub_keyword]' class="form-control" value="<?php echo $search_subject; ?>" id='news_subject' maxlength='25' placeholder="Search for subject.....">
+</div>
+<div class="col-sm-3">
 <input type="text" name='search[keyword]' class="form-control" value="<?php echo $search_keyword; ?>" id='keyword' maxlength='25' placeholder="Search for article.....">
 </div>
-    <div class="col-sm-3">
+    <div class="col-sm-2">
       
-      <input type="date"  class="form-control" name="news[nkeyword]" id="news_date" value="">
+        <input type="date"  class="form-control" name="news[nkeyword]" id="news_date" value="" style="padding-top: 1;width: 117%;">
     </div>
-<div class="col-sm-3">
-  <input type="submit" name="btnsubmit" value="Search"> 
+<div class="col-sm-1">
+    <input type="submit" name="btnsubmit"  class="btn btn-info" value="Search" > 
   
   <!-- <input type="button"  value="Reset" onclick="reset();"> -->
 </div>
