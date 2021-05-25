@@ -12,6 +12,7 @@
         public $act_name;
         public $file_principal_act;
         public $act_number;
+        public $act_year;
         public $gazette_citation;
         public $date_of_president_asset;
         public $file_president_asset;
@@ -41,7 +42,7 @@
             $this->gazette_citation=htmlspecialchars(strip_tags($this->gazette_citation));
             $this->date_of_enforcment=htmlspecialchars(strip_tags($this->date_of_enforcment));
 
-           $query =  "INSERT INTO  ".$this->db_table."  SET act_name='".$this->act_name."',file_principal_act='$this->file_principal_act',act_number='".$this->act_number."',gazette_citation='".$this->gazette_citation."',date_of_president_asset='".$this->date_of_president_asset."',file_president_asset='$this->file_president_asset',date_of_enforcment='".$this->date_of_enforcment."',file_enforcment='$this->file_enforcment',status='1',created_on='$created_on' ";
+           $query =  "INSERT INTO  ".$this->db_table."  SET act_name='".$this->act_name."',act_year='".$this->act_year."',file_principal_act='$this->file_principal_act',act_number='".$this->act_number."',gazette_citation='".$this->gazette_citation."',date_of_president_asset='".$this->date_of_president_asset."',file_president_asset='$this->file_president_asset',date_of_enforcment='".$this->date_of_enforcment."',file_enforcment='$this->file_enforcment',status='1',created_on='$created_on' ,created_by='$created_by'";
             $stmt = $this->conn->prepare($query);
 
             $stmt->execute();

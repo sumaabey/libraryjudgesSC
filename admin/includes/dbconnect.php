@@ -4,8 +4,8 @@ class Database{
     
     private $db_host = 'localhost';
     private $db_name = 'library';
-    private $db_username = 'root';
-    private $db_password = 'root';
+    private $db_username = 'preeti';
+    private $db_password = 'Preeti@123';
     
     
     public function dbConnection(){

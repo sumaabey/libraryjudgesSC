@@ -19,22 +19,28 @@ $legislative     = new Legislativeact($db);
 $time = time();
 $legislative->act_name=$_POST['principal_act'];
 $legislative->act_number=$_POST['principal_act_no'];
+$legislative->act_year=$_POST['act_year'];
 $legislative->gazette_citation=$_POST['gazette_citation'];
 $legislative->date_of_president_asset=$_POST['date_of_president_asset'];
 $legislative->date_of_enforcment=$_POST['date_of_enforcment'];
+$legislative->created_by=$_POST['created_by'];
 
-
+//print_r($_POST);
 
 $file_principal_act=strtolower($_FILES['fileprincipal_act']['name']);
+
+if($file_principal_act)
+{
+
 $file_act =explode(".",$file_principal_act); // get the extension of the file
-
-$fileprincipalact = $time.".".$file_act[1] ;
+//echo 'test';print_r($file_act);
+$fileprincipalact = "pact_".$time.".".$file_act[1] ;
 $target_p_act = '../../lrca/act/'.$fileprincipalact;
-
+//echo  '<br>';print_r($_FILES);
 if ($_FILES['fileprincipal_act']['type'] == 'application/pdf') 
 {
 
-	$upload_act = move_uploaded_file($_FILES['fileprincipalact']['tmp_name'], $target_p_act);
+	$upload_act = move_uploaded_file($_FILES['fileprincipal_act']['tmp_name'], $target_p_act);
 	//echo "<br>pdf file".$target_p_act;
 
 	if($upload_act)
@@ -47,22 +53,25 @@ if ($_FILES['fileprincipal_act']['type'] == 'application/pdf')
 	else
 	{
 			$errorVal=1;
-		    $err_msg = 'There was some error moving the file to upload directory. Please make sure the upload directory is writable by web server.'.$_FILES['file_principal_act']['error'];
+		    $err_msg = 'There was some error moving the file to upload directory. Please make sure the upload directory is writable by web server.'.$_FILES['fileprincipal_act']['error'];
 		    //echo json_encode(array("statusCode"=>201,"message"=>$err_msg));
 		     $returnArr['status'] = "Error";
 			 $returnArr['msg'] = $err_msg;
 	}//end of move upload
 }
 
+}//end of if condition
 
 $file_president_asset=strtolower($_FILES['file_president_asset']['name']);
-$file_president_asset =explode(".",$file_president_asset); // get the extension of the file
-
-$filepresidentasset = $time.".".$file_president_asset[1] ;
-$target_president_asset = '../../lrca/act/'.$filepresidentasset;
-
-if ($_FILES['file_president_asset']['type'] == 'application/pdf') 
+if($file_president_asset)
 {
+	$file_president_asset =explode(".",$file_president_asset); // get the extension of the file
+
+	$filepresidentasset = "president_".$time.".".$file_president_asset[1] ;
+	$target_president_asset = '../../lrca/act/'.$filepresidentasset;
+
+	if ($_FILES['file_president_asset']['type'] == 'application/pdf') 
+	{
 
 	$upload_president_asset = move_uploaded_file($_FILES['file_president_asset']['tmp_name'], $target_president_asset );
 	//echo "<br>pdf file".$target_p_act;
@@ -81,37 +90,45 @@ if ($_FILES['file_president_asset']['type'] == 'application/pdf')
 		     $returnArr['status'] = "Error";
 			 $returnArr['msg'] = $err_msg;
 	}//end of move upload
+	}
+
 }
+
 
 
 $file_enforcment=strtolower($_FILES['file_enforcment']['name']);
-$file_enforcment =explode(".",$file_enforcment); // get the extension of the file
-
-$fileenforcment = $time.".".$file_enforcment[1] ;
-$target_enforcment = '../../lrca/act/'.$fileenforcment;
-
-if ($_FILES['file_enforcment']['type'] == 'application/pdf') 
+if($file_enforcment)
 {
+		$file_enforcment =explode(".",$file_enforcment); // get the extension of the file
 
-	$upload_enforcment = move_uploaded_file($_FILES['file_enforcment']['tmp_name'], $target_enforcment );
-	//echo "<br>pdf file".$target_p_act;
+		$fileenforcment = "encforce_".$time.".".$file_enforcment[1] ;
+		$target_enforcment = '../../lrca/act/'.$fileenforcment;
 
-	if($upload_enforcment)
-	{
-			$sucess_msg =$file_enforcment.' President Asset File uploaded successfully.';$errorVal=0;
-			$returnArr['status'] = "Success";
-			$returnArr['msg'] = $sucess_msg ;
-			
-	}
-	else
-	{
-			$errorVal=1;
-		    $err_msg = 'There was some error moving the file to upload directory. Please make sure the upload directory is writable by web server.'.$_FILES['file_enforcment']['error'];
-		    //echo json_encode(array("statusCode"=>201,"message"=>$err_msg));
-		     $returnArr['status'] = "Error";
-			 $returnArr['msg'] = $err_msg;
-	}//end of move upload
+		if ($_FILES['file_enforcment']['type'] == 'application/pdf') 
+		{
+
+		$upload_enforcment = move_uploaded_file($_FILES['file_enforcment']['tmp_name'], $target_enforcment );
+		//echo "<br>pdf file".$target_p_act;
+
+			if($upload_enforcment)
+			{
+				$sucess_msg =$file_enforcment.' President Asset File uploaded successfully.';$errorVal=0;
+				$returnArr['status'] = "Success";
+				$returnArr['msg'] = $sucess_msg ;
+				
+			}
+			else
+			{
+				$errorVal=1;
+			    $err_msg = 'There was some error moving the file to upload directory. Please make sure the upload directory is writable by web server.'.$_FILES['file_enforcment']['error'];
+			    //echo json_encode(array("statusCode"=>201,"message"=>$err_msg));
+			     $returnArr['status'] = "Error";
+				 $returnArr['msg'] = $err_msg;
+			}//end of move upload
+		}
 }
+
+
 
 $legislative->file_enforcment=$fileenforcment;
 $legislative->file_president_asset=$filepresidentasset;
