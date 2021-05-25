@@ -81,10 +81,12 @@
                             <li>
                                 <a href="#" class="dropdown-toggle" id="ddlmenuItem" data-toggle="dropdown"> Legislative Act<i class="fa fa-angle-down"></i></a>
                             <ul class="dropdown-menu" role="menu" aria-labelledby="ddlmenuItem">
-                               <li role="presentation"><a role="menuitem" tabindex="-1" href="legislative.php">Add LRCA</a></li>
+                               <!-- <li role="presentation"><a role="menuitem" tabindex="-1" href="legislative.php">Add LRCA</a></li> -->
 
-                               <li role="presentation"><a role="menuitem" tabindex="-1" href="add-principalact-lrca.php">Add Act</a></li>
-                               <li role="presentation"><a role="menuitem" tabindex="-1" href="manage-legislative.php">View Act</a></li>
+                               <li role="presentation"><a role="menuitem" tabindex="-1" href="add-principalact-lrca.php">Add LRCA Act</a></li>
+                               <li role="presentation"><a role="menuitem" tabindex="-1" href="manage-legislative.php">View LRCA Act</a></li>
+                               <li role="presentation"><a role="menuitem" tabindex="-1" href="add-debates-bill-lrca.php">Add LRCA Debates & Bill</a></li>
+                               <li role="presentation"><a role="menuitem" tabindex="-1" href="manage-debates-bill-lrca.php">View LRCA Debates & Bill</a></li>
                             </ul>
                             </li>
 

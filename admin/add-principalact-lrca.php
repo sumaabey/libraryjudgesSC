@@ -1,6 +1,8 @@
 <?php
 session_start();
-
+error_reporting(1);
+ini_set('display_error',1);
+include_once 'includes/functions.php';
 
 if(strlen($_SESSION['alogin'])==0)
 {   
@@ -70,11 +72,19 @@ Principal Act
 
 <div class="panel-body">
         <form role="form" method="post" action=""  id="frmlrca" enctype="multipart/form-data">
-             <input class="form-control" type="hidden" name="created_by" autocomplete="off"  value="<?=$_SESSION['alogin']?>" />
+             <input class="form-control" type="hidden" name="created_by"  id="created_by"  autocomplete="off"  value="<?php echo $_SESSION['alogin'];?>" />
              <input type="hidden" name="action" value="SAVE_ACT">
        <div class="form-group">
                     <label class="control-label">Name of the Principal Act<span style="color:red;">*</span></label>
                     <input maxlength="100" name="principal_act" id="act_name" type="text" required="required" class="form-control" placeholder="Enter Principal Act Name" />
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Year of Act<span style="color:red;">*</span></label>
+                     <?php //call the function 
+                     $currentyear=date("Y");  
+                     yearDropdown('1800', $currentyear);  
+ 
+                    ?>
                 </div>
                 <div class="form-group">
                     <label class="control-label">Upload</label>
@@ -147,6 +157,8 @@ $(document).ready(function() {
          var errval=0;
          var act_name     = $('#act_name').val();    
          var act_number   = $('#act_number').val();
+         var act_year   = $('#act_year').val();
+         var created_by   = $('#created_by').val();
          var gazette_citation   = $('#gazette_citation').val();
          var date_of_president_asset   = $('#date_of_president_asset').val();
          var date_of_enforcment   = $('#date_of_enforcment').val();
@@ -186,10 +198,18 @@ $(document).ready(function() {
 
         }
 
-       if(act_number ==''){
+         if(act_name==''){
                
              $("#erroutput").show();
-             $("#erroutput").html('Please fill act Number !');
+             $("#erroutput").html('Please fill act name !');
+             errval=1;return false;
+
+        }
+
+       if(act_year ==''){
+               
+             $("#erroutput").show();
+             $("#erroutput").html('Please fill year of Act !');
              errval=1;return false;
 
         }
@@ -199,12 +219,14 @@ $(document).ready(function() {
         if(errval==0)
         {
              console.log("****Principal Act*********");
-
+              $("#erroutput").hide();
               var fd = new FormData();
 
               
               fd.append('principal_act',act_name);
               fd.append('principal_act_no',act_number);
+               fd.append('act_year',act_year);
+              fd.append('created_by',created_by);
               fd.append('gazette_citation',gazette_citation);
               fd.append('date_of_president_asset',date_of_president_asset);
               fd.append('date_of_enforcment',date_of_enforcment);
