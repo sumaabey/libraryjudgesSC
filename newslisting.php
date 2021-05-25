@@ -24,9 +24,6 @@ $connection = $dbclass->dbConnection();
 
 
 
-
-//print_r($titleName);
-
 $titleSql = "select id,title_name from tbl_news_title where status ='1'";
 $titlestmt = $connection->prepare($titleSql);
 $titlestmt->execute();
@@ -290,7 +287,7 @@ include_once("file/includes/header.php");
 </div>
     <div class="col-sm-2">
       
-        <input type="date"  class="form-control" name="news[nkeyword]" id="news_date" value="" style="padding-top: 1;width: 117%;">
+        <input type="date"  class="form-control" name="news[nkeyword]" id="news_date" value="<?php echo $search_nkeyword; ?>" style="padding-top: 1;width: 117%;">
     </div>
 <div class="col-sm-1">
     <input type="submit" name="btnsubmit"  class="btn btn-info" value="Search" > 
@@ -323,7 +320,10 @@ include_once("file/includes/header.php");
 
       <?php
       $cnt=1;
-  if(!empty($result) && isset($_POST['btnsubmit'])) { 
+  if(isset($_POST['news']['nkeyword']) || isset($_POST['title']['skeyword']) 
+          || isset($_POST['subject']['sub_keyword'])   || isset($_POST['search']['keyword'])  ) {
+    //print_r($result);  
+     
     foreach($result as $row) {
 
       
@@ -337,7 +337,7 @@ include_once("file/includes/header.php");
         <td style="text-align: left;"><?php $titleName=getTitleNameByID($row['title'],$connection); 
         echo $titleName;
          ?></td>
-        <td><?php echo $row['news_date']; ?></td>
+        <td><?php echo date("Y-m-d" , strtotime($row['news_date'])); ?></td>
         <td><a href="newsupload/<?php echo htmlentities($row['news_file']);  ?>" target="_blank" class="btn btn-success btn-xs">View</a></td>
          </tr>
       <?php
@@ -385,11 +385,6 @@ include_once("file/includes/header.php");
 
 
 </div>
-  <?php
-include_once("file/includes/footer.php");
-
-
-  ?>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
   
