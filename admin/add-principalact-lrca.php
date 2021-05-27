@@ -1,7 +1,5 @@
 <?php
 session_start();
-error_reporting(1);
-ini_set('display_error',1);
 include_once 'includes/functions.php';
 
 if(strlen($_SESSION['alogin'])==0)
@@ -30,7 +28,37 @@ else{
     <link href="assets/css/style.css" rel="stylesheet" />
     <!-- GOOGLE FONT -->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+ <style>
+        .alert {
+          padding: 20px;
+          color: #a94442;
+          background-color: #f2dede;
+          border-color: #ebccd1;
+          width: 21%;
+          float: left;
+          margin-top: -78%;
+        }
 
+        .closebtn {
+          margin-left: 15px;
+          color: white;
+          font-weight: bold;
+          float: right;
+          font-size: 22px;
+          line-height: 20px;
+          cursor: pointer;
+          transition: 0.3s;
+        }
+
+        .closebtn:hover {
+          color: black;
+        }
+        .alert.success {  
+            color: #3c763d;
+            background-color: #dff0d8;
+            border-color: #d6e9c6;
+        }
+ </style>
 </head>
 <body>
       <!------MENU SECTION START-->
@@ -71,7 +99,7 @@ Principal Act
 
 
 <div class="panel-body">
-        <form role="form" method="post" action=""  id="frmlrca" enctype="multipart/form-data">
+        <form role="form" method="post" action="legislative/legislative_act_save"  id="frmlrca" enctype="multipart/form-data">
              <input class="form-control" type="hidden" name="created_by"  id="created_by"  autocomplete="off"  value="<?php echo $_SESSION['alogin'];?>" />
              <input type="hidden" name="action" value="SAVE_ACT">
        <div class="form-group">
@@ -87,7 +115,7 @@ Principal Act
                     ?>
                 </div>
                  <div class="form-group">
-                    <label class="control-label">Show Type<span style="color:red;">*</span></label>
+                    <label class="control-label">Show Type</label>
                     <input type="radio" name="view_type" id="view_type" value="PUBLIC" checked="">PUBLIC
                     <input type="radio" name="view_type" id="view_type" value="PRIVATE">PRIVATE
                 </div>
@@ -128,7 +156,7 @@ Principal Act
              <option value=""></option>
         </select>
         </div> -->
-         <button type="button" name="Save" id="butsave" class="btn btn-info">Save </button>
+       <input type="submit" name="Save" id="butsave" class="btn btn-info" value="Save">
 <span id="success" style="display:none;width: 400px;border: 1px solid #D8D8D8;padding: 10px;border-radius: 5px;
 font-family: Arial;font-size: 11px;text-transform: uppercase;background-color: rgb(236, 255, 216);color: green;text-align: center;margin-top: 30px;"></span>
   <div id="erroutput"></div>
@@ -141,6 +169,12 @@ font-family: Arial;font-size: 11px;text-transform: uppercase;background-color: r
    
     </div>
     </div>
+        <div class="alert error" style="display:none" id="errorMsg">
+        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+        </div>
+             <div class="alert success" style="display:none" id="successMsg">
+        <span class="closebtn" onclick="this.parentElement.style.display='none';" >&times;</span>      
+     </div>
      <!-- CONTENT-WRAPPER SECTION END-->
   <?php include('includes/footer.php');?>
       <!-- FOOTER SECTION END-->
@@ -158,13 +192,13 @@ font-family: Arial;font-size: 11px;text-transform: uppercase;background-color: r
 
 $(document).ready(function() {
         $('#butsave').on('click', function(e) {
-                    e.preventDefault();
+         e.preventDefault();
          var errval=0;
          var act_name     = $('#act_name').val();    
          var act_number   = $('#act_number').val();
          var act_year   = $('#act_year').val();
          var created_by   = $('#created_by').val();
-         var view_type   = $('#view_type').val();
+         var view_type   = $("input[name='view_type']:checked").val();
          var gazette_citation   = $('#gazette_citation').val();
          var date_of_president_asset   = $('#date_of_president_asset').val();
          var date_of_enforcment   = $('#date_of_enforcment').val();
@@ -173,57 +207,88 @@ $(document).ready(function() {
          var ext_act = file_act.split('.').pop();
          if(file_act!="" && ext_act !="pdf")
          {
-            $("#erroutput").show();
-            $("#erroutput").html('Please upload PDF for Principal Act !');
-            errval=1;return false;
+               $('#errorMsg').text("Please upload PDF for Principal Act !");
+               $('.error').show();
+               $('#file_principal_act').focus(); 
+               setTimeout(
+               function() 
+               {
+               $('.error').hide();                            
+               }, 3000);  
+               errval=1;
+               return false;
          }
          var filepresidentasset = $("#file_president_asset").val();
          var ext_file_president_asset = filepresidentasset.split('.').pop();
          if(filepresidentasset!="" && ext_file_president_asset !="pdf")
          {
-            $("#erroutput").show();
-            $("#erroutput").html('Please upload PDF for President Asset !');
-            errval=1;return false;
+               $('#errorMsg').text("Please upload PDF for President Asset !");
+               $('.error').show();
+               $('#file_president_asset').focus(); 
+               setTimeout(
+               function() 
+               {
+               $('.error').hide();                            
+               }, 3000);                      
+               errval=1;
+               return false;
          }
-
-
          var file_enforcment = $("#file_enforcment").val();
          var ext_file_enforcment = file_enforcment.split('.').pop();
-         if(file_enforcment!="" && ext_file_enforcment !="pdf")
-         {
-            $("#erroutput").show();
-            $("#erroutput").html('Please upload PDF for Enforcement !');
-            errval=1;return false;
-         }
-
-         if(act_name==''){
-               
-             $("#erroutput").show();
-             $("#erroutput").html('Please fill act name !');
-             errval=1;return false;
-
-        }
-
-         if(act_name==''){
-               
-             $("#erroutput").show();
-             $("#erroutput").html('Please fill act name !');
-             errval=1;return false;
-
-        }
-
-       if(act_year ==''){
-               
-             $("#erroutput").show();
-             $("#erroutput").html('Please fill year of Act !');
-             errval=1;return false;
-
-        }
-
-        console.log("Err"+errval+"act"+act_name+"actno:"+act_number);
-
-        if(errval==0)
+        if(file_enforcment!="" && ext_file_enforcment !="pdf")
         {
+               $('#errorMsg').text("Please upload PDF for Enforcement !");
+               $('.error').show();
+               $('#file_enforcment').focus(); 
+               setTimeout(
+               function() 
+               {
+               $('.error').hide();                            
+               }, 3000);     
+              errval=1;
+              return false;
+        }
+        if(act_name==''){
+               $('#errorMsg').text("Please Enter Act Name");
+               $('.error').show();
+               $('#act_name').focus(); 
+               setTimeout(
+               function() 
+               {
+               $('.error').hide();                            
+               }, 3000);              
+               errval=1;
+              return false;
+
+        }
+       if(act_year ==''){
+            $('#errorMsg').text("Please Select Act Year");
+            $('.error').show();
+            $('#act_year').focus(); 
+            setTimeout(
+            function() 
+            {
+            $('.error').hide();                            
+            }, 3000);  
+             errval=1;return false;
+
+        } 
+       if(act_number ==''){
+            $('#errorMsg').text("Please Enter Act Number");
+            $('.error').show();
+            $('#act_number').focus(); 
+            setTimeout(
+            function() 
+            {
+            $('.error').hide();                            
+            }, 3000);  
+             errval=1;return false;
+
+        } 
+        if(errval==0)
+        {  
+                
+//          document.getElementById("frmlrca").submit(); 
              console.log("****Principal Act*********");
               $("#erroutput").hide();
               var fd = new FormData();
@@ -239,7 +304,7 @@ $(document).ready(function() {
               fd.append('view_type',view_type);
 
               var files_act = $('#file_principal_act')[0].files;
-              fd.append('fileprincipal_act',files_act[0]);
+              fd.append('file_principal_act',files_act[0]);
               var filepresidentasset = $('#file_president_asset')[0].files;
               fd.append('file_president_asset',filepresidentasset[0]);
               var file_enforcment = $('#file_enforcment')[0].files;
@@ -261,7 +326,7 @@ $(document).ready(function() {
                         function() 
                         {
                         $('.success').hide();       
-                        window.location.href="manage-legislative.php";   //do something special
+                        window.location.href="manage-legislative";   //do something special
                         }, 4000);
                         
                    }else{                        
@@ -276,10 +341,7 @@ $(document).ready(function() {
                 
                  },
          });
-               
-
-               
-
+              
         }
     
 
