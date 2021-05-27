@@ -18,11 +18,15 @@
         public $file_president_asset;
         public $date_of_enforcment;
         public $file_enforcment;
+        public $view_type;
+        public $act_title;
         public $status;
         public $created_on;
         public $created_by;
         public $updated_on;
-        public $updated_by;        
+        public $updated_by;  
+
+        public $colArray;      
 
         // Db connection
         public function __construct($db){
@@ -42,7 +46,9 @@
             $this->gazette_citation=htmlspecialchars(strip_tags($this->gazette_citation));
             $this->date_of_enforcment=htmlspecialchars(strip_tags($this->date_of_enforcment));
 
-           $query =  "INSERT INTO  ".$this->db_table."  SET act_name='".$this->act_name."',act_year='".$this->act_year."',file_principal_act='$this->file_principal_act',act_number='".$this->act_number."',gazette_citation='".$this->gazette_citation."',date_of_president_asset='".$this->date_of_president_asset."',file_president_asset='$this->file_president_asset',date_of_enforcment='".$this->date_of_enforcment."',file_enforcment='$this->file_enforcment',status='1',created_on='$created_on' ,created_by='$created_by'";
+            $this->act_title = substr($this->act_name, 0, 1);
+
+            $query =  "INSERT INTO  ".$this->db_table."  SET act_name='".$this->act_name."',act_year='".$this->act_year."',file_principal_act='$this->file_principal_act',act_number='".$this->act_number."',gazette_citation='".$this->gazette_citation."',date_of_president_asset='".$this->date_of_president_asset."',file_president_asset='$this->file_president_asset',date_of_enforcment='".$this->date_of_enforcment."',file_enforcment='$this->file_enforcment',status='1',created_on='$created_on' ,created_by='$created_by',view_type='".$this->view_type."',act_title='".$this->act_title."' ";
             $stmt = $this->conn->prepare($query);
 
             $stmt->execute();
@@ -62,7 +68,13 @@
 
 
        
-
+      public function getActValue($colArray)
+      {
+            $sqlQuery = "SELECT ".$colArray." FROM ".$this->db_table." WHERE status='1' AND ".$colArray."!='' ORDER BY  id DESC";
+            $stmt = $this->conn->prepare($sqlQuery);
+            $stmt->execute();
+            return $stmt;
+      }
         
         
     }

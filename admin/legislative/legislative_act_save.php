@@ -1,7 +1,4 @@
 <?php
-error_reporting(1);
-ini_set('display_errors', 1); 
-
 header("Content-Type: application/json; charset=UTF-8");
 header("Access-Control-Allow-Methods: POST");
 header("Access-Control-Max-Age: 3600");
@@ -24,23 +21,22 @@ $legislative->gazette_citation=$_POST['gazette_citation'];
 $legislative->date_of_president_asset=$_POST['date_of_president_asset'];
 $legislative->date_of_enforcment=$_POST['date_of_enforcment'];
 $legislative->created_by=$_POST['created_by'];
+$legislative->view_type=$_POST['view_type'];
 
-//print_r($_POST);
+//print_r($_POST);print_r($_FILES);
 
-$file_principal_act=strtolower($_FILES['fileprincipal_act']['name']);
+$file_principal_act=strtolower($_FILES['file_principal_act']['name']);
 
 if($file_principal_act)
 {
 
 $file_act =explode(".",$file_principal_act); // get the extension of the file
-//echo 'test';print_r($file_act);
 $fileprincipalact = "pact_".$time.".".$file_act[1] ;
 $target_p_act = '../../lrca/act/'.$fileprincipalact;
-//echo  '<br>';print_r($_FILES);
-if ($_FILES['fileprincipal_act']['type'] == 'application/pdf') 
+if ($_FILES['file_principal_act']['type'] == 'application/pdf') 
 {
 
-	$upload_act = move_uploaded_file($_FILES['fileprincipal_act']['tmp_name'], $target_p_act);
+	$upload_act = move_uploaded_file($_FILES['file_principal_act']['tmp_name'], $target_p_act);
 	//echo "<br>pdf file".$target_p_act;
 
 	if($upload_act)
@@ -84,7 +80,7 @@ if($file_president_asset)
 	}
 	else
 	{
-			$errorVal=1;
+			$errorVal=2;
 		    $err_msg = 'There was some error moving the file to upload directory. Please make sure the upload directory is writable by web server.'.$_FILES['file_president_asset']['error'];
 		    //echo json_encode(array("statusCode"=>201,"message"=>$err_msg));
 		     $returnArr['status'] = "Error";
@@ -112,14 +108,14 @@ if($file_enforcment)
 
 			if($upload_enforcment)
 			{
-				$sucess_msg =$file_enforcment.' President Asset File uploaded successfully.';$errorVal=0;
+				$sucess_msg =$file_enforcment.' enforcement  File uploaded successfully.';$errorVal=0;
 				$returnArr['status'] = "Success";
 				$returnArr['msg'] = $sucess_msg ;
 				
 			}
 			else
 			{
-				$errorVal=1;
+				$errorVal=3;
 			    $err_msg = 'There was some error moving the file to upload directory. Please make sure the upload directory is writable by web server.'.$_FILES['file_enforcment']['error'];
 			    //echo json_encode(array("statusCode"=>201,"message"=>$err_msg));
 			     $returnArr['status'] = "Error";
@@ -133,7 +129,6 @@ if($file_enforcment)
 $legislative->file_enforcment=$fileenforcment;
 $legislative->file_president_asset=$filepresidentasset;
 $legislative->file_principal_act=$fileprincipalact;
-
 
 if($errorVal==0)
 {

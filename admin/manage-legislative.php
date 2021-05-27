@@ -30,7 +30,7 @@ else{
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-     <title>Judges' Library | Manage Legislative Act</title>
+     <title>Judges Library | Manage Legislative Act</title>
     <!-- BOOTSTRAP CORE STYLE  -->
     <link href="assets/css/bootstrap.css" rel="stylesheet" />
     <!-- FONT AWESOME STYLE  -->
@@ -145,29 +145,6 @@ else{
 
 
 
-
-         <!-- Modal -->
-<!--   <div class="model " id="myModal" style="display: none;">
-    <div class="modal-dialog"> -->
-    
-      <!-- Modal content-->
-    <!--   <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" onclick="closemodel();">&times;</button>
-          <h4 class="modal-title">Modal Header</h4>
-        </div>
-        <div class="modal-body">
-          <input type="file" name="">
-          <input type="text" name="actid" id="actid">
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal" onclick="closemodel();">Close</button>
-        </div>
-      </div>
-      
-    </div>
-  </div> -->
-  <!-- The Modal -->
 <div id="myModal" class="modal">
 
   <!-- Modal content -->
@@ -234,7 +211,7 @@ while($result = $stmt->fetch(PDO::FETCH_OBJ))
 
                          <td class="center"><?php 
                          $file_act=$target_act_path.$result->file_principal_act;
-                         if (file_exists($file_act))
+                         if (file_exists($file_act) && $result->file_principal_act!="")
                          {
                              echo htmlentities($result->file_principal_act);                       
                             echo '<p><a href="'.$file_act.'" target="_blank" title="view pdf">View</a>';
@@ -248,7 +225,7 @@ while($result = $stmt->fetch(PDO::FETCH_OBJ))
                          ?></td>
                          <td class="center"><?php 
                          $file_asset=$target_act_path.$result->file_president_asset;
-                         if (file_exists($file_asset))
+                         if (file_exists($file_asset) && $result->file_president_asset!="")
                          {
                             echo htmlentities($result->file_president_asset);
                             
@@ -265,7 +242,7 @@ while($result = $stmt->fetch(PDO::FETCH_OBJ))
                          ?></td>
                         <td class="center" ><?php 
                          $file_enf=$target_act_path.$result->file_enforcment;
-                         if (file_exists($file_enf))
+                         if (file_exists($file_enf) && $result->file_enforcment!="")
                          {
                             echo htmlentities($result->file_enforcment);
                             

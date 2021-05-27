@@ -3,6 +3,7 @@ session_start();
 error_reporting(1);
 
 include_once 'includes/dbconnect.php';
+include_once 'class/legislativeact.php';
 include_once 'class/lrcbilldetabe.php';
 
 
@@ -11,7 +12,7 @@ $db       = $database->dbConnection();
 
 
 $lrcbilldetabe     = new LrcBillDebate($db);
-
+$legislative       = new Legislativeact($db);
 
 if(strlen($_SESSION['alogin'])==0)
 {   
@@ -77,7 +78,13 @@ else{
 Debates & Bill 
 </div>
 
+<?php
 
+$actyears=$legislative ->getActValue('act_year');
+//print_r($actyears);
+
+
+?>
 
 <div class="panel-body">
         <form role="form" method="post" action=""  id="frmlrcaDebate" enctype="multipart/form-data">
@@ -88,9 +95,12 @@ Debates & Bill
              <div class="form-group">
                     <label class="control-label">Year of Act<span style="color:red;">*</span></label>
 
-                    <select class="form-control" id="act_year"  aria-label=".form-select-sm example" name="act_year" >
-                        <option value="">Select Year</option>
-
+                    <select class="form-control" id="act_year"  aria-label=".form-select-sm example" name="act_year" onchange="getActList(this.value)" id="company_list">
+                        <option value="">Select Year</option><?php
+                            while ($row = $actyears->fetch(PDO::FETCH_ASSOC)){
+                        ?>
+                        <option value="<?php echo $row['act_yeard'];  ?>"><?php echo $row['act_year'];  ?></option>
+                        <?php } ?>
                     </select>
                    
                 </div>
@@ -193,50 +203,9 @@ font-family: Arial;font-size: 11px;text-transform: uppercase;background-color: r
     <!-- BOOTSTRAP SCRIPTS  -->
     <script src="assets/js/bootstrap.js"></script>
 
-   <script>
-    function  showdebates(id)
-    {
-        var id;
-        
-
-        if(id==1)
-        {
-             var loksabha_debate=$("#loksabha").val();
-             if(loksabha_debate==1) 
-                {
-                    $("#upload_ls").show();
-                }else{
-                     $("#upload_ls").hide();
-                } 
-        }
-        if(id==2)
-        {
-              var rajsabha_debate=$("#rajsabha").val();
-
-             if(rajsabha_debate==1) 
-                {
-                    $("#upload_rs").show();
-                }else{
-                     $("#upload_rs").hide();
-                }
-        }
-
-         if(id==3)
-        {
-             
-
-              var both_debate=$("#both_sabha").val();
-
-             if(both_debate==1) 
-                {
-                    $("#upload_both").show();
-                }else{
-                     $("#upload_both").hide();
-                } 
-        }
-    }
-   </script>
-
+   <script src="legislative/js/legislative_act.js"></script>
+   
+   
       
     
 </body>
