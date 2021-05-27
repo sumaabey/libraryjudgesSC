@@ -24,8 +24,9 @@ $legislative->gazette_citation=$_POST['gazette_citation'];
 $legislative->date_of_president_asset=$_POST['date_of_president_asset'];
 $legislative->date_of_enforcment=$_POST['date_of_enforcment'];
 $legislative->created_by=$_POST['created_by'];
+$legislative->view_type=$_POST['view_type'];
 
-//print_r($_POST);
+//print_r($_POST);print_r($_FILES);
 
 $file_principal_act=strtolower($_FILES['fileprincipal_act']['name']);
 

@@ -86,6 +86,11 @@ Principal Act
  
                     ?>
                 </div>
+                 <div class="form-group">
+                    <label class="control-label">Show Type<span style="color:red;">*</span></label>
+                    <input type="radio" name="view_type" id="view_type" value="PUBLIC" checked="">PUBLIC
+                    <input type="radio" name="view_type" id="view_type" value="PRIVATE">PRIVATE
+                </div>
                 <div class="form-group">
                     <label class="control-label">Upload</label>
                      <input type="file" id="file_principal_act" name="file_principal_act">
@@ -159,6 +164,7 @@ $(document).ready(function() {
          var act_number   = $('#act_number').val();
          var act_year   = $('#act_year').val();
          var created_by   = $('#created_by').val();
+         var view_type   = $('#view_type').val();
          var gazette_citation   = $('#gazette_citation').val();
          var date_of_president_asset   = $('#date_of_president_asset').val();
          var date_of_enforcment   = $('#date_of_enforcment').val();
@@ -225,11 +231,12 @@ $(document).ready(function() {
               
               fd.append('principal_act',act_name);
               fd.append('principal_act_no',act_number);
-               fd.append('act_year',act_year);
+              fd.append('act_year',act_year);
               fd.append('created_by',created_by);
               fd.append('gazette_citation',gazette_citation);
               fd.append('date_of_president_asset',date_of_president_asset);
               fd.append('date_of_enforcment',date_of_enforcment);
+              fd.append('view_type',view_type);
 
               var files_act = $('#file_principal_act')[0].files;
               fd.append('fileprincipal_act',files_act[0]);
