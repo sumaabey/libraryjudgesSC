@@ -82,7 +82,7 @@ Bills</a><br>
       <br>
       </td>
       <td style="vertical-align: top; text-align: left;"><a
- href="ca.htm"><span style="color: rgb(51, 102, 255);">Central Acts</span></a></td>
+ href="../central_act"><span style="color: rgb(51, 102, 255);">Central Acts</span></a></td>
       <td style="vertical-align: top; text-align: left;"><a
  href="#">Central
 Rules</a></td>

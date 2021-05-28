@@ -260,7 +260,7 @@ while($result = $stmt->fetch(PDO::FETCH_OBJ))
                         <td class="center" ><?php echo htmlentities($result->created_on);?></td>                        
                         <td class="center">
 
-                        <a href="edit-legislative_act?id=<?php echo htmlentities($result->id);?>"><button class="btn btn-primary"><i class="fa fa-edit "></i> Edit</button> 
+                        <a href="edit-principalact-lrca?id=<?php echo htmlentities($result->id);?>"><button class="btn btn-primary"><i class="fa fa-edit "></i> Edit</button> 
 
                       
 
