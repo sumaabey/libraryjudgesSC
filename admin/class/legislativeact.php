@@ -27,6 +27,7 @@
         public $updated_by;  
 
         public $colArray;      
+        public $colName;      
 
         // Db connection
         public function __construct($db){
@@ -71,6 +72,25 @@
       public function getActValue($colArray)
       {
             $sqlQuery = "SELECT ".$colArray." FROM ".$this->db_table." WHERE status='1' AND ".$colArray."!='' ORDER BY  id DESC";
+            $stmt = $this->conn->prepare($sqlQuery);
+            $stmt->execute();
+            return $stmt;
+      }
+      
+      public function updateFiles() {
+            if($this->file_principal_act){
+                   $sqlQuery ="UPDATE ".$this->db_table." SET file_principal_act='$this->file_principal_act' WHERE id='$this->id'";
+            }if($this->file_president_asset){
+                   $sqlQuery ="UPDATE ".$this->db_table." SET file_president_asset='$this->file_president_asset' WHERE id='$this->id'";
+            }if($this->file_enforcment){             
+                   $sqlQuery ="UPDATE ".$this->db_table." SET file_enforcment='$this->file_enforcment' WHERE id='$this->id'"; 
+            }
+            $stmt = $this->conn->prepare($sqlQuery);
+            $stmt->execute();
+            return $stmt;
+      }
+      public function removeFiles() {
+            $sqlQuery ="UPDATE ".$this->db_table." SET $this->colName='' WHERE id='$this->id'";
             $stmt = $this->conn->prepare($sqlQuery);
             $stmt->execute();
             return $stmt;

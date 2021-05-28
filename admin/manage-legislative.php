@@ -44,45 +44,75 @@ else{
 <style>
 /*body {font-family: Arial, Helvetica, sans-serif;}*/
 
-/* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-}
+    /* The Modal (background) */
+    .modal {
+      display: none; /* Hidden by default */
+      position: fixed; /* Stay in place */
+      z-index: 1; /* Sit on top */
+      padding-top: 100px; /* Location of the box */
+      left: 0;
+      top: 0;
+      width: 100%; /* Full width */
+      height: 100%; /* Full height */
+      overflow: auto; /* Enable scroll if needed */
+      background-color: rgb(0,0,0); /* Fallback color */
+      background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    }
 
-/* Modal Content */
-.modal-content {
-  background-color: #fefefe;
-  margin: auto;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 27%;
-}
+    /* Modal Content */
+    .modal-content {
+      background-color: #fefefe;
+      margin: auto;
+      padding: 20px;
+      border: 1px solid #888;
+      width: 27%;
+    }
 
-/* The Close Button */
-.close {
-  color: #aaaaaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
+    /* The Close Button */
+    .close {
+      color: #aaaaaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+    }
 
-.close:hover,
-.close:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
-}
+    .close:hover,
+    .close:focus {
+      color: #000;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    .alert {
+      padding: 20px;
+      color: #a94442;
+      background-color: #f2dede;
+      border-color: #ebccd1;
+      width: 21%;
+      float: left;
+      margin-top: -78%;
+    }
+
+    .closebtn {
+      margin-left: 15px;
+      color: white;
+      font-weight: bold;
+      float: right;
+      font-size: 22px;
+      line-height: 20px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .closebtn:hover {
+      color: black;
+    }
+    .alert.success {  
+        color: #3c763d;
+        background-color: #dff0d8;
+        border-color: #d6e9c6;
+    }
 </style>
+
 </head>
 <body>
       <!------MENU SECTION START-->
@@ -151,10 +181,11 @@ else{
   <div class="modal-content">
     <div class="modal-body">
         <h4 class="modal-title">Upload File</h4><br>
-        <form role="form" method="post" action=""  id="frmlrcaupload" enctype="multipart/form-data">
-          <input type="file" name="">
+        <form role="form" method="post"  enctype="multipart/form-data">
+            <input type="file" name="file" id="file">
           <input type="hidden" name="actid" id="actid">
-           <input type="hidden" name="colname" id="colname"><br><button class="btn btn-primary">Upload</button> 
+              <input type="hidden" name="colName" id="colName"> <br>
+                      <button type="button" class="btn btn-primary" onclick="saveuploadFile();">Upload</button> 
          </form>
         </div>
         <div class="modal-footer">
@@ -215,7 +246,7 @@ while($result = $stmt->fetch(PDO::FETCH_OBJ))
                          {
                              echo htmlentities($result->file_principal_act);                       
                             echo '<p><a href="'.$file_act.'" target="_blank" title="view pdf">View</a>';
-                            ?>&nbsp;| <i class="fa fa-cross" aria-hidden="true"></i><a href="#" target="_blank" onclick="delete_pdf('<?=$result->file_principal_act?>','file_principal_act')"> Delete</a></p>
+                            ?>&nbsp;| <i class="fa fa-cross" aria-hidden="true"></i><a href="#"  onclick="delete_pdf('<?=$result->file_principal_act?>','<?=$result->id?>','file_principal_act')"> Delete</a></p>
                             <?php
                          }else{
                             ?>
@@ -230,7 +261,7 @@ while($result = $stmt->fetch(PDO::FETCH_OBJ))
                             echo htmlentities($result->file_president_asset);
                             
                             echo '<p><a href="'.$file_asset.'" target="_blank" title="view pdf"> View</a>';
-                            ?>&nbsp;| <a href="#" target="_blank" onclick="delete_pdf('<?=$result->file_president_asset?>','file_president_asset')">Delete</a></p>
+                            ?>&nbsp;| <a href="#" onclick="delete_pdf('<?=$result->file_president_asset?>','<?=$result->id?>','file_president_asset')">Delete</a></p>
                             <?php
                          }else{
                             ?>
@@ -247,7 +278,7 @@ while($result = $stmt->fetch(PDO::FETCH_OBJ))
                             echo htmlentities($result->file_enforcment);
                             
                             echo '<p><a href="'.$file_enf.'" target="_blank" title="view pdf"> View</a>';
-                            ?>&nbsp;| <a href="#" target="_blank" onclick="delete_pdf('<?=$result->file_enforcment?>','file_enforcment')">Delete</a></p>
+                            ?>&nbsp;| <a href="#"  onclick="delete_pdf('<?=$result->file_enforcment?>','<?=$result->id?>','file_enforcment')">Delete</a></p>
                             <?php
                          }else{?>
                               <!-- <button type="button" class="btn btn-info btn-lg" onclick="showfileupload(<?php  //echo  $result->id ?>,'file_enforcment');">Open Modal<?php  //echo  $result->id ?></button> -->
@@ -287,7 +318,12 @@ while($result = $stmt->fetch(PDO::FETCH_OBJ))
             
     </div>
     </div>
-
+        <div class="alert error" style="display:none" id="errorMsg">
+        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+        </div>
+             <div class="alert success" style="display:none" id="successMsg">
+        <span class="closebtn" onclick="this.parentElement.style.display='none';" >&times;</span>      
+     </div>
 
 
      <!-- CONTENT-WRAPPER SECTION END-->
@@ -310,37 +346,114 @@ while($result = $stmt->fetch(PDO::FETCH_OBJ))
 function showfileupload(id,colName){
 
   $("#actid").val(id);
+  $("#colName").val(colName);
   $("#myModal").show();
 }
 function closemodel(){
  $("#myModal").hide();   
 }
-</script> 
-   <script>
+function saveuploadFile(){
+        var fd = new FormData();
+        var colName = $("#colName").val();
+        var id = $("#actid").val();
+        var fileval = $("#file").val();
+        var ext = fileval.split('.').pop();
+        if(fileval != '' && ext !="pdf"){
+            $(".error").show();
+            $("#errorMsg").text("Select Only Pdf File");
+            setTimeout(
+            function() 
+            {
+            $(".error2").hide();
+            }, 2000);
+           return false;
+        } 
+        var files = $('#file')[0].files;
+        fd.append('id',id);        
+        fd.append('colName',colName);        
+        fd.append('mode', 'edit');        
+        fd.append('file',files[0]);
+        $.ajax({
+                type: 'POST',
+                url: 'legislative/legislative_ajax',                  
+                data: fd,          
+//                dataType: "json",
+                async:false,
+                contentType: false,
+                processData: false,
+                error: function() { console.log("error"); },
+                success: function(response) { 
+
+                  if(response.status == 'Success'){                                             
+                       $("#myModal").hide(); 
+                       $('#successMsg').text(response.msg);
+                       $('.success').show();                                               
+                        setTimeout(
+                        function() 
+                        {
+                            
+                        $('.success').hide();       
+                        window.location.href="manage-legislative";   //do something special
+                        }, 1000);
+                        
+                   }else{                        
+                         $('#errorMsg').text(response.msg);
+                         $('.error').show();
+                         setTimeout(
+                         function() 
+                         {
+                         $('.error').hide();                            
+                         }, 4000);
+                   }
+                
+                },
+         });
+}
 // Get the modal
 var modal = document.getElementById("myModal");
 
 // Get the button that opens the modal
 var btn = document.getElementById("myBtn");
 
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks the button, open the modal 
-// btn.onclick = function() {
-//   modal.style.display = "block";
-// }
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-}
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
   }
+}
+function delete_pdf(fileName,id,colName){
+    var fd = new FormData();
+     fd.append('mode',"del");   
+     fd.append('fileName',fileName);   
+     fd.append('id',id);   
+     fd.append('colName',colName);   
+      $.ajax({
+                type: 'POST',
+                url: 'legislative/legislative_ajax',                  
+                data: fd,                                               
+                async:false,
+                contentType: false,
+                processData: false,
+                error: function() { console.log("error"); },
+                success: function(response) { 
+                  if(response.status == 'Success'){                                             
+                       $('#successMsg').text(response.msg);
+                       $('.success').show();                                               
+                       window.location.reload();
+                   }else{                        
+                         $('#errorMsg').text(response.msg);
+                         $('.error').show();
+                         setTimeout(
+                         function() 
+                         {
+                         $('.error').hide();                            
+                         }, 4000);
+                   }
+                
+                },
+         });
+    
 }
 </script>
 
